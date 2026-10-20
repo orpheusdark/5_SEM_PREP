@@ -2,12 +2,12 @@
 
 [![Citations](https://img.shields.io/badge/Citations-Academic%20%26%20Industry-blue.svg)](#)
 
-This study material is synthesized from the official Parul University course curriculum, authoritative academic textbooks, and formal engineering standards.
+This study material is synthesized from the official course curriculum, authoritative academic textbooks, and formal engineering standards.
 
 ---
 
-## 🏛️ 1. Primary Course Materials (Parul University)
-- **Institution:** Parul University, Faculty of Engineering & Technology, Department of Computer Science & Engineering.
+## 🏛️ 1. Primary Course Materials
+- **Faculty:** Engineering & Technology, Department of Computer Science & Engineering.
 - **Subject:** Software Engineering (Subject Code: `303105253`).
 - **Academic Decks Analyzed:**
   1. `SE unit 1.pdf` (89 Slides): Introduction, Software Characteristics, Generic View, Process Models (Waterfall, V, Incremental, RAD, Prototyping, Spiral, Concurrent, Agile, Scrum, XP), UML Structural & Behavioral Diagrams.
@@ -18,7 +18,7 @@ This study material is synthesized from the official Parul University course cur
   6. `SE unit 6.pdf` (53 Slides): Software Testing Concepts, Psychology of Testing, Levels of Testing, IEEE 829 Test Plan, Boundary Value Analysis, Pairwise Testing, SQA, McCall's 11 Quality Factors, ISO 9000/9001.
   7. `SE unit 7.pdf` (11 Slides): CASE Tools Architecture, Central Repository, Scrum Integration, System Dependability, Reliability Engineering ($MTTF, MTTR, MTBF, Availability$), Safety, Security, Resilience.
   8. `SE unit 8.pdf` (12 Slides): Advanced Software Engineering, Software Reuse, Component-Based Software Engineering (CBSE), Distributed SE, Service-Oriented SE (SOA, REST), Real-Time SE (Hard/Soft), Systems Engineering.
-- **Examination Pattern Evidence:** `paper style midsem.jpeg` — Parul University Mid-Semester Examination Blueprint (Section A & B, 2-mark definitions, 4-mark short questions, 5-mark design/applied questions).
+- **Examination Pattern Evidence:** `paper style midsem.jpeg` — Mid-Semester Examination Blueprint (Section A & B, 2-mark definitions, 4-mark short questions, 5-mark design/applied questions).
 
 ---
 

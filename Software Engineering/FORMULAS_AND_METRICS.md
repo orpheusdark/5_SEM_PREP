@@ -1,7 +1,6 @@
 # 📐 Software Engineering Formulas, Laws & Quick-Reference Sheet
 
 [![Format](https://img.shields.io/badge/Formulas-LaTeX%20%26%20KaTeX-blue.svg)](#)
-[![Parul University](https://img.shields.io/badge/Course-SE%20(303105253)-green.svg)](#)
 
 ---
 

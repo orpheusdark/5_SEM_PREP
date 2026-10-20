@@ -2,7 +2,6 @@
 title: "Unit 8: Advanced Software Engineering"
 unit: 8
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 8.pdf (12 Slides)"
 priority: "Medium"
 tags:
@@ -18,7 +17,7 @@ status: complete
 
 # 🚀 Unit 8: Advanced Software Engineering
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 8.pdf`, Pages 1–12. Cross-referenced with Sommerville (Ch. 15–21) and Pressman (Ch. 14, 30).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 8.pdf`, Pages 1–12. Cross-referenced with Sommerville (Ch. 15–21) and Pressman (Ch. 14, 30).
 
 ---
 
@@ -162,7 +161,7 @@ if __name__ == "__main__":
 
 ---
 
-## F. Common Mistakes & Parul University Exam Tips
+## F. Common Mistakes & Exam Tips
 - **Provides vs Requires Interface Trap:**
   - **Provides Interface:** What the component *supplies* to the outside world (Lollipop `---O`).
   - **Requires Interface:** What the component *demands* from the outside world to run (Socket `---(`).

@@ -2,7 +2,6 @@
 title: "Unit 2: Software Project Management"
 unit: 2
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 2.pdf (23 Slides)"
 priority: "High"
 tags:
@@ -16,7 +15,7 @@ status: complete
 
 # 📊 Unit 2: Software Project Management
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 2.pdf`, Pages 1–23. Cross-referenced with Pressman (Ch. 24, 27, 28) and Sommerville (Ch. 22–24).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 2.pdf`, Pages 1–23. Cross-referenced with Pressman (Ch. 24, 27, 28) and Sommerville (Ch. 22–24).
 
 ---
 
@@ -219,10 +218,10 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Parul University Exam Tips
+## G. Common Mistakes & Exam Tips
 - **Mistake:** Forgetting the difference between Risk Mitigation and Risk Management.
   *Tip:* **Mitigation** happens *before* the disaster (preventative vaccine). **Management** happens *after* the disaster strikes (emergency treatment).
-- **Parul Exam Tip (5 Marks):** If asked to explain the **W5HH Principle**, write all 7 questions, give the author's name (**Barry Boehm**), and write 1 sentence explaining the software management significance of each question.
+- **Exam Tip (5 Marks):** If asked to explain the **W5HH Principle**, write all 7 questions, give the author's name (**Barry Boehm**), and write 1 sentence explaining the software management significance of each question.
 
 ---
 

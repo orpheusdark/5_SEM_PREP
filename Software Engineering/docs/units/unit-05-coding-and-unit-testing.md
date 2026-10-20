@@ -2,7 +2,6 @@
 title: "Unit 5: Coding, Metrics & Unit Testing"
 unit: 5
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 5.pdf (34 Slides)"
 priority: "Critical"
 tags:
@@ -18,7 +17,7 @@ status: complete
 
 # 💻 Unit 5: Coding, Metrics & Unit Testing
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 5.pdf`, Pages 1–34. Cross-referenced with Pressman (Ch. 16, 25) and Sommerville (Ch. 8, 23). Contains the exact solved numerical problems for **Cyclomatic Complexity**, **Function Point Analysis (FPA)**, and **Halstead Software Science**.
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 5.pdf`, Pages 1–34. Cross-referenced with Pressman (Ch. 16, 25) and Sommerville (Ch. 8, 23). Contains the exact solved numerical problems for **Cyclomatic Complexity**, **Function Point Analysis (FPA)**, and **Halstead Software Science**.
 
 ---
 
@@ -32,7 +31,7 @@ Unit 5 bridges the transition from design models to executable code and quantita
 4. **Knot Count** for unstructured spaghetti code detection.
 
 ### 2. Why does it matter?
-In the Parul University final exam, **Unit 5 is the primary source of numerical problems**. You can guarantee that either a Cyclomatic Complexity calculation or a Function Point calculation will appear in Section A/B!
+In the the final exam, **Unit 5 is the primary source of numerical problems**. You can guarantee that either a Cyclomatic Complexity calculation or a Function Point calculation will appear in Section A/B!
 
 ---
 
@@ -303,7 +302,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Parul University Exam Tips
+## G. Common Mistakes & Exam Tips
 - **Predicate Node Trap in $V(G)$:** If an `if` statement has compound boolean operators (e.g., `if (A && B)`), it contains **TWO predicates**, not one! Each simple boolean condition counts as an independent decision.
 - **Halstead Stroud Number:** Remember that time calculation divides Effort by **18** ($T = E / 18$), representing 18 mental discriminations per second.
 

@@ -1,7 +1,6 @@
 ---
 title: "Multiple Choice Questions (MCQs) & Trap Analysis"
 course: "Software Engineering (303105253)"
-university: "Parul University"
 tags:
   - mcqs
   - practice

@@ -35,7 +35,7 @@
 
 ---
 
-### 2. ⚖️ High-Yield Distinctions Matrix (Parul Exam Classics)
+### 2. ⚖️ High-Yield Distinctions Matrix (Exam Classics)
 
 | Comparison | Core Difference / Definition | Critical Exam Keywords |
 | :--- | :--- | :--- |

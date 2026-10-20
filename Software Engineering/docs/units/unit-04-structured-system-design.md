@@ -2,7 +2,6 @@
 title: "Unit 4: Structured System Design"
 unit: 4
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 4.pdf (67 Slides)"
 priority: "Critical"
 tags:
@@ -17,7 +16,7 @@ status: complete
 
 # 🏗️ Unit 4: Structured System Design
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 4.pdf`, Pages 1–67. Cross-referenced with Pressman (Ch. 9–13) and Sommerville (Ch. 6–7).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 4.pdf`, Pages 1–67. Cross-referenced with Pressman (Ch. 9–13) and Sommerville (Ch. 6–7).
 
 ---
 
@@ -278,7 +277,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Parul University Exam Tips
+## G. Common Mistakes & Exam Tips
 
 - **The Coupling Hierarchy Error:** Students often confuse Data Coupling and Stamp Coupling.
   _Rule:_ If you pass a simple integer or string, it is **Data Coupling**. If you pass an entire object, dictionary, or struct when only a field is needed, it is **Stamp Coupling**.

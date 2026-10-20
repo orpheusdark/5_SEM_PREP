@@ -2,7 +2,6 @@
 title: "Unit 3: Requirements Engineering"
 unit: 3
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 3.pdf (32 Slides)"
 priority: "High"
 tags:
@@ -17,7 +16,7 @@ status: complete
 
 # 📋 Unit 3: Requirements Engineering
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 3.pdf`, Pages 1–32. Cross-referenced with Pressman (Ch. 5–8) and Sommerville (Ch. 4–5).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 3.pdf`, Pages 1–32. Cross-referenced with Pressman (Ch. 5–8) and Sommerville (Ch. 4–5).
 
 ---
 

@@ -2,7 +2,6 @@
 title: "Unit 7: CASE Tools & System Dependability"
 unit: 7
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 7.pdf (11 Slides)"
 priority: "Medium"
 tags:
@@ -17,7 +16,7 @@ status: complete
 
 # 🛠️ Unit 7: CASE Tools & System Dependability
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 7.pdf`, Pages 1–11. Cross-referenced with Pressman (Ch. 3, 14) and Sommerville (Ch. 10–14).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 7.pdf`, Pages 1–11. Cross-referenced with Pressman (Ch. 3, 14) and Sommerville (Ch. 10–14).
 
 ---
 
@@ -184,7 +183,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Parul University Exam Tips
+## G. Common Mistakes & Exam Tips
 - **Reliability vs Safety Distinction (Crucial 2-Mark Question):**
   - *Reliability:* Conforming to specifications without crashing. (A software can be 100% reliable according to flawed specs, but still cause an accident—meaning it is unsafe!).
   - *Safety:* Preventing accidents and physical harm, regardless of whether a failure occurred.

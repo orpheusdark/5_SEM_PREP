@@ -2,7 +2,6 @@
 title: "Unit 6: Software Testing & Quality Assurance"
 unit: 6
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 6.pdf (53 Slides)"
 priority: "Critical"
 tags:
@@ -18,7 +17,7 @@ status: complete
 
 # 🧪 Unit 6: Software Testing & Quality Assurance
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 6.pdf`, Pages 1–53. Cross-referenced with Pressman (Ch. 17–20) and Sommerville (Ch. 8, 24). Contains the exact BVA $[18, 30]$ test suite and McCall's 11 Factors.
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 6.pdf`, Pages 1–53. Cross-referenced with Pressman (Ch. 17–20) and Sommerville (Ch. 8, 24). Contains the exact BVA $[18, 30]$ test suite and McCall's 11 Factors.
 
 ---
 
@@ -28,7 +27,7 @@ status: complete
 Software Testing is the systematic execution of software under controlled conditions to uncover defects and ensure fitness for purpose. This unit examines the **Psychology of Testing**, **Levels of Testing (Unit, Integration, System, Acceptance)**, the **IEEE 829 Test Plan standard**, **Black-Box testing techniques (Boundary Value Analysis, Equivalence Partitioning, Pairwise Testing, State-Based Testing)**, **White-Box testing**, **Software Quality Assurance (SQA)**, **McCall's 11 Quality Factors**, and **ISO 9000/9001 Certification**.
 
 ### 2. Why does it matter?
-Testing is the primary defense against software failure. In Parul University exams, **Boundary Value Analysis (BVA)** and **McCall's Quality Factors** appear consistently as 4-mark and 5-mark questions!
+Testing is the primary defense against software failure. In the exams, **Boundary Value Analysis (BVA)** and **McCall's Quality Factors** appear consistently as 4-mark and 5-mark questions!
 
 ---
 
@@ -277,7 +276,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Parul University Exam Tips
+## G. Common Mistakes & Exam Tips
 - **Stub vs Driver Trap (2-Mark Question):**
   - **Stub:** A dummy module called by the module under test; used in **Top-Down Integration**.
   - **Driver:** A test harness that calls the module under test; used in **Bottom-Up Integration**.

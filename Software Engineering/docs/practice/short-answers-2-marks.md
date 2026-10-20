@@ -1,12 +1,10 @@
 ---
 title: "Short-Answer Questions & Model Solutions (2 Marks)"
 course: "Software Engineering (303105253)"
-university: "Parul University"
 exam_section: "Section A & B Q.1 Compulsory Questions"
 tags:
   - short-answers
   - 2-marks
-  - parul-university
 status: complete
 ---
 
@@ -14,7 +12,7 @@ status: complete
 
 > [!TIP]
 > **HOW TO SCORE FULL 2/2 MARKS:**
-> Write exactly 2–3 precise bullet points containing the **essential technical keywords**. Parul University examiners look for exact keywords!
+> Write exactly 2–3 precise bullet points containing the **essential technical keywords**.  examiners look for exact keywords!
 
 ---
 

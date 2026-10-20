@@ -1,11 +1,10 @@
 # 🗺️ Master Syllabus & Slide Traceability Map
 
 [![Status](https://img.shields.io/badge/Coverage-100%25%20(321%20Slides)-brightgreen.svg)](#)
-[![Parul University](https://img.shields.io/badge/Parul%20University-303105253-red.svg)](https://www.paruluniversity.ac.in)
 
 > **Course Code:** Software Engineering (`303105253`)  
 > **Target Audience:** B.Tech / Diploma / M.Tech Computer Science & Engineering Students  
-> **Source Material:** All 8 official Parul University presentation decks (321 total slides) cross-referenced with Roger S. Pressman (*Software Engineering: A Practitioner's Approach*) and Ian Sommerville (*Software Engineering*).
+> **Source Material:** All 8 official presentation decks (321 total slides) cross-referenced with Roger S. Pressman (*Software Engineering: A Practitioner's Approach*) and Ian Sommerville (*Software Engineering*).
 
 ---
 

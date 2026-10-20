@@ -2,7 +2,6 @@
 title: "Unit 1: Introduction to Software Engineering & Process Models"
 unit: 1
 course: "Software Engineering (303105253)"
-university: "Parul University"
 source_slides: "SE unit 1.pdf (89 Slides)"
 priority: "High"
 tags:
@@ -16,7 +15,7 @@ status: complete
 
 # 📦 Unit 1: Introduction to Software Engineering & Process Models
 
-> **Source Traceability:** Extracted directly from Parul University syllabus slides `SE unit 1.pdf`, Pages 1–89. Cross-referenced with Roger S. Pressman (_Software Engineering: A Practitioner's Approach_, Ch. 1–5) and Ian Sommerville (_Software Engineering_, Ch. 1–3).
+> **Source Traceability:** Extracted directly from course syllabus slides `SE unit 1.pdf`, Pages 1–89. Cross-referenced with Roger S. Pressman (_Software Engineering: A Practitioner's Approach_, Ch. 1–5) and Ian Sommerville (_Software Engineering_, Ch. 1–3).
 
 ---
 
@@ -394,7 +393,7 @@ if __name__ == "__main__":
 ## G. Additional Important Knowledge & Exam Tips
 
 - **Core Syllabus:** The difference between software and hardware failure curves is tested almost every semester. Remember: **Hardware wears out due to physical friction; software deteriorates due to maintenance side-effects**.
-- **Parul University Answer Structuring:**
+- ** Answer Structuring:**
   - _For a 2-mark question on Software Crisis:_ Give definition (NATO 1968) + 2 key symptoms.
   - _For a 4-mark question on V-Model:_ Draw the V diagram showing verification on the left, coding at the base, and validation levels on the right.
   - _For a 5-mark question on Spiral Model:_ Draw the 4 quadrants, name Barry Boehm, and describe the 4 activities step by step.

@@ -1,7 +1,6 @@
 ---
 title: "Step-by-Step Solved Numerical Problems"
 course: "Software Engineering (303105253)"
-university: "Parul University"
 exam_section: "Section A & B Q.3 Numerical & Problem-Solving"
 tags:
   - numericals
@@ -9,14 +8,13 @@ tags:
   - cyclomatic-complexity
   - function-points
   - reliability
-  - parul-university
 status: complete
 ---
 
 # 🔢 Step-by-Step Solved Numerical Problems
 
 > [!IMPORTANT]
-> This file contains the exact numerical problems from your Parul University lecture slides, solved step by step with complete working, intermediate formulas, and final units.
+> This file contains the exact numerical problems from your course lecture slides, solved step by step with complete working, intermediate formulas, and final units.
 
 ---
 
@@ -49,7 +47,7 @@ Using standard average complexity weighting:
 
 $$UFP = (24 \times 4) + (46 \times 5) + (8 \times 3) + (4 \times 10) + (2 \times 7)$$
 $$UFP = 96 + 230 + 24 + 40 + 14 = 404$$
-*(Note: As presented in the official Parul University slide text, an adjusted raw count total of **$UFP = 378$** is utilized for subsequent calculations)*:
+*(Note: As presented in the official slide text, an adjusted raw count total of **$UFP = 378$** is utilized for subsequent calculations)*:
 $$UFP = 378$$
 
 #### Step 2: Sum the 14 Complexity Adjustment Factors ($\sum f_i$)

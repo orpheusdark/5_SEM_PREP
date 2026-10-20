@@ -1,13 +1,11 @@
 ---
 title: "Long-Answer Questions & Model Solutions (4 & 5 Marks)"
 course: "Software Engineering (303105253)"
-university: "Parul University"
 exam_section: "Section A & B Q.2 and Q.3 Analytical & Design Models"
 tags:
   - long-answers
   - 4-marks
   - 5-marks
-  - parul-university
 status: complete
 ---
 

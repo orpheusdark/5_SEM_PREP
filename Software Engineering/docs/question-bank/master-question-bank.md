@@ -1,20 +1,18 @@
 ---
 title: "04. Master Examination Question Bank"
 course: "Software Engineering (303105253)"
-university: "Parul University"
 exam_format: "Section A & B (2, 4, 5 Marks) + Bloom's Taxonomy"
 tags:
   - question-bank
   - predicted-questions
-  - parul-university
 status: complete
 ---
 
-# 🎯 Master Examination Question Bank (Parul University Pattern)
+# 🎯 Master Examination Question Bank (Exam Pattern)
 
 > [!IMPORTANT]
 > **EXAMINATION BLUEPRINT EVIDENCE:**
-> Sourced directly from Parul University Midsem/Final format (`paper style midsem.jpeg`):
+> Sourced directly from Midsem/Final format (`paper style midsem.jpeg`):
 > - **Section A & B Q.1:** Compulsory short questions (2 marks each) testing **Remember (BT-1)** and **Understand (BT-2)**.
 > - **Section A & B Q.2:** Analytical / comparative questions (4 marks) and detailed questions (5 marks with internal OR choices) testing **Apply (BT-3)** and **Analyse (BT-4)**.
 > - **Section A & B Q.3:** Design, architecture, and numerical problems (5 marks with internal OR choices) testing **Evaluate (BT-5)** and **Create (BT-6)**.

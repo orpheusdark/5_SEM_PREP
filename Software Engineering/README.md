@@ -1,19 +1,8 @@
-# 🎓 Software Engineering (303105253) — Complete Exam Study Guide & Repository
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Markdown](https://img.shields.io/badge/Format-GitHub%20Markdown-blue.svg)](https://docs.github.com/en/get-started/writing-on-github)
-[![Course](https://img.shields.io/badge/Course-SE%20(303105253)-green.svg)](#)
-[![University](https://img.shields.io/badge/Parul%20University-Engineering%20%26%20Tech-red.svg)](https://www.paruluniversity.ac.in)
-[![Status](https://img.shields.io/badge/Status-100%25%20Verified%20Exam%20Ready-brightgreen.svg)](#)
-
-> [!IMPORTANT]
-> **⚡ EMERGENCY EXAM PREPARATION NOTICE:**  
-> This repository is a **comprehensive, beginner-friendly, and high-yield study system** designed specifically for the **Software Engineering (303105253)** final examination.  
-> It covers **100% of all 8 course modules (321 lecture slides)**, textbook theory from **Roger S. Pressman** & **Ian Sommerville**, and the **Parul University Examination Blueprint** (Section A & B: 2-mark definitions, 4-mark comparisons, and 5-mark design & numerical problems).
+# 🎓 Software Engineering (303105253) — Exam Study Guide
 
 ---
 
-## 🧭 Repository Quick Navigation
+## 🧭 Quick Navigation
 
 ```
 se-exam-study-guide/
@@ -170,16 +159,3 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Service-Oriented Software Engineering (SOSE): SOA, Web Services, RESTful APIs vs. SOAP, Microservices
 - [ ] Real-Time Software Engineering: Hard vs. Soft Real-Time systems, stimulus-response patterns, scheduling
 - [ ] Systems Engineering: Socio-technical systems & System of Systems (SoS)
-
----
-
-## 💻 Git & GitHub Usage Instructions
-
-### Clone this Repository Locally
-```bash
-git clone https://github.com/your-username/se-exam-study-guide.git
-cd se-exam-study-guide
-```
-
-### Viewing on GitHub
-All Markdown files are formatted to render natively on GitHub with syntax highlighting, mathematical equations ($KaTeX$), and responsive diagrams ($Mermaid$).

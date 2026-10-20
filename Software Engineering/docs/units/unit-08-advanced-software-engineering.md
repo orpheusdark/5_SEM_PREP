@@ -21,9 +21,9 @@ status: complete
 
 ---
 
-## A. Topic Overview
+## 🗺️ A. Topic Overview
 
-### 1. What is this topic about?
+### ✨ 1. What is this topic about?
 Unit 8 explores advanced software engineering paradigms:
 1. **Software Reuse:** Benefits, inhibitors, and the 4 levels of reuse.
 2. **Component-Based Software Engineering (CBSE):** The 4 framework activities (Qualification, Adaptation, Composition, Evolution) and component interface contracts (Provides vs Requires).
@@ -34,7 +34,7 @@ Unit 8 explores advanced software engineering paradigms:
 
 ---
 
-## B. Explain Like I Am Learning It for the First Time
+## ✨ B. Explain Like I Am Learning It for the First Time
 
 Think of building a modern custom gaming computer:
 - You don't manufacture your own graphics processing unit or solder RAM chips from sand.
@@ -44,25 +44,25 @@ Think of building a modern custom gaming computer:
 
 ---
 
-## C. Detailed Exam Notes
+## 📝 C. Detailed Exam Notes
 
-### 1. Software Reuse
+### 🚀 1. Software Reuse
 
-#### Benefits of Software Reuse (Slide 3)
+#### 🚀 Benefits of Software Reuse (Slide 3)
 1. **Increased Dependability:** Reused components have been tried and battle-tested in real operational environments; design faults have already been discovered and eliminated.
 2. **Reduced Development Risk:** Costs are known upfront; scheduling delays are minimized.
 3. **Effective Use of Specialists:** Instead of junior developers reinventing cryptography, battle-tested cryptographic libraries written by world experts are reused.
 4. **Standards Compliance:** Reused components (e.g., UI libraries) enforce organizational and industry standards.
 5. **Accelerated Development:** Assembling pre-existing software dramatically reduces time-to-market.
 
-#### Problems & Inhibitors of Reuse (Slide 5 - Exam Question)
+#### ❓ Problems & Inhibitors of Reuse (Slide 5 - Exam Question)
 1. **Increased Maintenance Costs:** If source code for the component is unavailable or vendor goes out of business, future maintenance becomes extremely challenging.
 2. **Lack of Tool Support:** Lack of standardized component catalogs and search tools.
 3. **"Not Invented Here" (NIH) Syndrome:** Software engineers often prefer writing their own code from scratch due to pride or lack of trust.
 4. **Component Search & Evaluation Costs:** Time and effort required to find, evaluate, and verify components can sometimes exceed building from scratch.
 5. **Architectural Mismatch:** Third-party components make conflicting assumptions about threading models, memory management, or error handling.
 
-#### The 4 Levels of Software Reuse
+#### 🚀 The 4 Levels of Software Reuse
 1. *Application System Reuse:* Reusing an entire COTS (Commercial Off-The-Shelf) application (e.g., ERP systems like SAP).
 2. *Component Reuse:* Reusing modular subsystems or containers (e.g., authentication microservice).
 3. *Object / Library Reuse:* Reusing classes or software packages (e.g., Python NumPy, Java Collections).
@@ -70,11 +70,11 @@ Think of building a modern custom gaming computer:
 
 ---
 
-### 2. Component-Based Software Engineering (CBSE)
+### 🚀 2. Component-Based Software Engineering (CBSE)
 
 A **Component** is an independent, encapsulated software unit that can be deployed without modification and composed with other components via explicit interface contracts.
 
-#### Component Interface Contracts
+#### 🚀 Component Interface Contracts
 - **Provides Interface:** Defines the services and methods that the component offers to other components (represented by a "lollipop" notation).
 - **Requires Interface:** Defines the services that the component requires from its environment to function properly (represented by a "socket" notation).
 
@@ -86,7 +86,7 @@ A **Component** is an independent, encapsulated software unit that can be deploy
                       +-------------------+
 ```
 
-#### Framework Activities of CBSE (Slide 8 - Guaranteed 5-Mark Question!)
+#### ❓ Framework Activities of CBSE (Slide 8 - Guaranteed 5-Mark Question!)
 1. **Component Qualification:** Assessing whether a candidate component satisfies functional and non-functional requirements (performance, reliability, security, documentation).
 2. **Component Adaptation:** Resolving interface conflicts between the component and the system. Techniques include writing **Adapters / Wrappers**.
 3. **Component Composition:** Integrating qualified, adapted components into the architectural framework via glue code and middleware.
@@ -94,7 +94,7 @@ A **Component** is an independent, encapsulated software unit that can be deploy
 
 ---
 
-### 3. Distributed Software Engineering
+### 🚀 3. Distributed Software Engineering
 - **Client-Server Architectures:**
   - *Two-Tier Architecture:* Client (UI & Business logic) connects directly to Database Server (Fat client).
   - *Three-Tier Architecture:* Presentation Tier (Thin client browser) $\rightarrow$ Application Tier (Business logic web server) $\rightarrow$ Database Tier.
@@ -102,7 +102,7 @@ A **Component** is an independent, encapsulated software unit that can be deploy
 
 ---
 
-### 4. Service-Oriented Software Engineering (SOSE)
+### ✨ 4. Service-Oriented Software Engineering (SOSE)
 - **Service-Oriented Architecture (SOA):** A style where software components provide services to other components via communication protocols over a network.
 - **Web Services & RESTful APIs:**
   - *SOAP (Simple Object Access Protocol):* XML-based, rigid, heavy protocol with formal WSDL contracts.
@@ -111,7 +111,7 @@ A **Component** is an independent, encapsulated software unit that can be deploy
 
 ---
 
-### 5. Real-Time Software Engineering
+### 🚀 5. Real-Time Software Engineering
 A real-time system is a software system whose correct functioning depends not only on the **logical correctness** of the computations, but also on the **time at which results are produced**.
 - **Hard Real-Time Systems:** Missing a timing deadline results in total, catastrophic system failure and potential loss of human life (e.g., anti-lock braking systems, missile guidance).
 - **Soft Real-Time Systems:** Missing a timing deadline degrades system quality of service (QoS) but does not cause catastrophic destruction (e.g., video streaming buffering, video games).
@@ -121,7 +121,7 @@ A real-time system is a software system whose correct functioning depends not on
 
 ---
 
-## D. Worked Examples: Component Adapter Pattern
+## 🏗️ D. Worked Examples: Component Adapter Pattern
 **Problem:** A banking system requires payment verification using a legacy internal interface `process_card(card_num: str, amount: float)`, but a new third-party payment component provides `execute_charge(account_id: str, dollars: float)`. Show how Component Adaptation resolves this mismatch.
 
 ```python
@@ -153,15 +153,15 @@ if __name__ == "__main__":
 
 ---
 
-## E. Memory and Understanding Techniques
+## ✨ E. Memory and Understanding Techniques
 
-### 1. Mnemonics
+### ✨ 1. Mnemonics
 - **4 CBSE Framework Activities:** **"Q-A-C-E"** -> **Q**ualification, **A**daptation, **C**omposition, **E**volution.
 - **Real-Time Systems:** **"Hard = Harm"** (Missing deadline causes physical harm/destruction). **"Soft = Sluggish"** (Missing deadline causes sluggishness/buffering).
 
 ---
 
-## F. Common Mistakes & Exam Tips
+## 📝 F. Common Mistakes & Exam Tips
 - **Provides vs Requires Interface Trap:**
   - **Provides Interface:** What the component *supplies* to the outside world (Lollipop `---O`).
   - **Requires Interface:** What the component *demands* from the outside world to run (Socket `---(`).
@@ -169,16 +169,16 @@ if __name__ == "__main__":
 
 ---
 
-## G. Quick Revision & Rapid Recall
+## 📝 G. Quick Revision & Rapid Recall
 
-### 5-Point Summary
+### 🧾 5-Point Summary
 1. Software reuse increases dependability, reduces risk, and accelerates time-to-market.
 2. The 4 framework activities of CBSE are Qualification, Adaptation, Composition, and Evolution.
 3. Component contracts feature Provides Interfaces (services offered) and Requires Interfaces (services needed).
 4. Hard real-time systems cause catastrophic failure if deadlines are missed; soft real-time systems only experience quality degradation.
 5. Microservices decouple applications into small, autonomous, independently deployable services.
 
-### Rapid-Recall Flash Questions
+### ❓ Rapid-Recall Flash Questions
 1. *Q: What are the 4 framework activities of Component-Based Software Engineering?*  
    **A:** Component Qualification, Adaptation, Composition, and Evolution.
 2. *Q: What is the primary difference between Hard and Soft Real-Time systems?*  
@@ -194,14 +194,14 @@ if __name__ == "__main__":
 
 ## 🧠 Interactive Practice Quiz
 
-### Question 1 (MCQ)
+### ❓ Question 1 (MCQ)
 Which CBSE framework activity involves wrapping a third-party software component with custom code to resolve data type mismatches?
 - A) Component Qualification
 - B) Component Composition
 - C) Component Adaptation
 - D) Component Evolution
 
-### Question 2 (Trap Question)
+### ❓ Question 2 (Trap Question)
 An automotive anti-lock braking system (ABS) is classified as which type of system?
 - A) Soft Real-Time System
 - B) Hard Real-Time System

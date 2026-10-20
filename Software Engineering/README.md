@@ -23,28 +23,28 @@ se-exam-study-guide/
 
 ## 📚 Unit Study Modules (Core Syllabus)
 
-| Unit | Module Title | Source Slides | Exam Priority | Est. Time | Direct Markdown Link |
-| :---: | :--- | :---: | :---: | :---: | :--- |
-| **01** | **Introduction & Process Models** | 89 Slides | 🔥 **High** | 75 mins | [📖 Read Unit 1](docs/units/unit-01-introduction-and-process-models.md) |
-| **02** | **Software Project Management** | 23 Slides | 🔥 **High** | 45 mins | [📖 Read Unit 2](docs/units/unit-02-software-project-management.md) |
-| **03** | **Requirements Engineering** | 32 Slides | 🔥 **High** | 50 mins | [📖 Read Unit 3](docs/units/unit-03-requirements-engineering.md) |
-| **04** | **Structured System Design** | 67 Slides | 🚨 **Critical** | 80 mins | [📖 Read Unit 4](docs/units/unit-04-structured-system-design.md) |
-| **05** | **Coding, Metrics & Unit Testing** | 34 Slides | 🚨 **Critical** | 75 mins | [📖 Read Unit 5](docs/units/unit-05-coding-and-unit-testing.md) |
-| **06** | **Testing & Quality Assurance** | 53 Slides | 🚨 **Critical** | 75 mins | [📖 Read Unit 6](docs/units/unit-06-software-testing-and-quality-assurance.md) |
-| **07** | **CASE Tools & Dependability** | 11 Slides | ⚡ **Medium** | 35 mins | [📖 Read Unit 7](docs/units/unit-07-case-tools-and-system-dependability.md) |
-| **08** | **Advanced Software Engineering** | 12 Slides | ⚡ **Medium** | 35 mins | [📖 Read Unit 8](docs/units/unit-08-advanced-software-engineering.md) |
+|  Unit  | Module Title                       | Source Slides |  Exam Priority  | Est. Time | Direct Markdown Link                                                           |
+| :----: | :--------------------------------- | :-----------: | :-------------: | :-------: | :----------------------------------------------------------------------------- |
+| **01** | **Introduction & Process Models**  |   89 Slides   |   🔥 **High**   |  75 mins  | [📖 Read Unit 1](docs/units/unit-01-introduction-and-process-models.md)        |
+| **02** | **Software Project Management**    |   23 Slides   |   🔥 **High**   |  45 mins  | [📖 Read Unit 2](docs/units/unit-02-software-project-management.md)            |
+| **03** | **Requirements Engineering**       |   32 Slides   |   🔥 **High**   |  50 mins  | [📖 Read Unit 3](docs/units/unit-03-requirements-engineering.md)               |
+| **04** | **Structured System Design**       |   67 Slides   | 🚨 **Critical** |  80 mins  | [📖 Read Unit 4](docs/units/unit-04-structured-system-design.md)               |
+| **05** | **Coding, Metrics & Unit Testing** |   34 Slides   | 🚨 **Critical** |  75 mins  | [📖 Read Unit 5](docs/units/unit-05-coding-and-unit-testing.md)                |
+| **06** | **Testing & Quality Assurance**    |   53 Slides   | 🚨 **Critical** |  75 mins  | [📖 Read Unit 6](docs/units/unit-06-software-testing-and-quality-assurance.md) |
+| **07** | **CASE Tools & Dependability**     |   11 Slides   |  ⚡ **Medium**  |  35 mins  | [📖 Read Unit 7](docs/units/unit-07-case-tools-and-system-dependability.md)    |
+| **08** | **Advanced Software Engineering**  |   12 Slides   |  ⚡ **Medium**  |  35 mins  | [📖 Read Unit 8](docs/units/unit-08-advanced-software-engineering.md)          |
 
 ---
 
 ## 🎯 Exam Practice & Question Bank
 
-| Practice Section | Content & Focus | Exam Format Weightage | Link |
-| :--- | :--- | :--- | :---: |
-| **50+ Conceptual MCQs** | Interactive quizzes with distractor traps & explanations | Conceptual Foundation | [🧪 Take Quiz](docs/practice/mcqs-and-quizzes.md) |
-| **Short Answers (2 Marks)** | Mandatory definitions, distinctions, and formulas | Section A/B Q.1 Compulsory | [📝 Study 2-Markers](docs/practice/short-answers-2-marks.md) |
-| **Long Answers (4 & 5 Marks)** | Analytical, comparative & architectural models | Section A/B Q.2 & Q.3 Options | [📝 Study Long Answers](docs/practice/long-answers-4-and-5-marks.md) |
-| **Step-by-Step Numericals** | Solved problems: FPA, Halstead, CC, Availability, BVA | Section A/B Q.3 Numericals | [🧮 Solve Numericals](docs/practice/solved-numericals.md) |
-| **Master Question Bank** | Full unit-by-unit predicted question inventory | Exam Blueprint | [🏆 View Question Bank](docs/question-bank/master-question-bank.md) |
+| Practice Section               | Content & Focus                                          | Exam Format Weightage         |                                 Link                                 |
+| :----------------------------- | :------------------------------------------------------- | :---------------------------- | :------------------------------------------------------------------: |
+| **50+ Conceptual MCQs**        | Interactive quizzes with distractor traps & explanations | Conceptual Foundation         |          [🧪 Take Quiz](docs/practice/mcqs-and-quizzes.md)           |
+| **Short Answers (2 Marks)**    | Mandatory definitions, distinctions, and formulas        | Section A/B Q.1 Compulsory    |     [📝 Study 2-Markers](docs/practice/short-answers-2-marks.md)     |
+| **Long Answers (4 & 5 Marks)** | Analytical, comparative & architectural models           | Section A/B Q.2 & Q.3 Options | [📝 Study Long Answers](docs/practice/long-answers-4-and-5-marks.md) |
+| **Step-by-Step Numericals**    | Solved problems: FPA, Halstead, CC, Availability, BVA    | Section A/B Q.3 Numericals    |      [🧮 Solve Numericals](docs/practice/solved-numericals.md)       |
+| **Master Question Bank**       | Full unit-by-unit predicted question inventory           | Exam Blueprint    | [🏆 View Question Bank](docs/question-bank/master-question-bank.md)  |
 
 ---
 
@@ -79,7 +79,8 @@ flowchart TD
 
 Use this Markdown checklist to track your exam readiness:
 
-### Unit 1: Introduction & Process Models
+### 🧭 Unit 1: Introduction & Process Models
+
 - [ ] Definition of Software Engineering (IEEE) and 3-part definition of Software
 - [ ] Hardware Bathtub Curve vs. Software Failure/Deterioration Curve
 - [ ] The Software Crisis: Causes, symptoms, and software myths
@@ -91,7 +92,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Agile Manifesto Values, Scrum Framework (Roles, Artifacts, Ceremonies), and XP practices
 - [ ] UML Structural (Class, Object, Component, Deployment) vs. Behavioral (Use Case, Sequence, Activity, State) diagrams
 
-### Unit 2: Software Project Management
+### 📊 Unit 2: Software Project Management
+
 - [ ] The Management Spectrum: 4 P's (People, Product, Process, Project)
 - [ ] Barry Boehm's W5HH Principle (7 Questions)
 - [ ] Team Structures: Democratic Decentralized, Controlled Centralized, Controlled Decentralized
@@ -99,7 +101,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Key Performance Indicators (KPIs): Schedule Variance, Effort Variance, Velocity
 - [ ] Management Tracking Tools: JIRA, Trello, MS Project
 
-### Unit 3: Requirements Engineering
+### 📋 Unit 3: Requirements Engineering
+
 - [ ] 5-Step Requirements Engineering Process: Feasibility, Elicitation, Specification, Validation, Management
 - [ ] Feasibility Study Dimensions: Technical, Operational, Economic ($T-O-E$)
 - [ ] Requirements Elicitation Techniques: Interviews, FAST, Brainstorming, Prototyping
@@ -109,7 +112,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Requirements Analysis & Modeling: Context Diagram (Level 0 DFD), DFD Level 1/2, Data Dictionary, ERD
 - [ ] Requirements Validation: Formal Reviews, Walkthroughs, Inspections
 
-### Unit 4: Structured System Design
+### 🏗️ Unit 4: Structured System Design
+
 - [ ] Fundamental Design Concepts: Abstraction, Modularity, Refinement, Information Hiding, Refactoring
 - [ ] Software Architecture Styles: Data-Centered, Data-Flow (Pipe & Filter), Call-and-Return, Layered (N-Tier), Object-Oriented
 - [ ] Architecture Tradeoff Analysis Method (ATAM): 9-Step Evaluation & Utility Tree
@@ -119,7 +123,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] **Coupling (7 Levels):** No Direct, Data, Stamp, Control, External, Common, Content
 - [ ] **Cohesion (7 Levels):** Functional, Sequential, Communicational, Procedural, Temporal, Logical, Coincidental
 
-### Unit 5: Coding and Unit Testing
+### 💻 Unit 5: Coding and Unit Testing
+
 - [ ] Coding Guidelines & Standards: Line length $\le 80$ chars, naming conventions, comments
 - [ ] Software Principles: KISS, DRY, YAGNI
 - [ ] SOLID Principles: Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion
@@ -130,7 +135,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Halstead Software Science Metrics: $n_1, n_2, N_1, N_2$, Program Vocabulary, Length, Volume, Difficulty, Effort, Time
 - [ ] Knot Count Metric for unstructured spaghetti code
 
-### Unit 6: Software Testing & Quality Assurance
+### 🧪 Unit 6: Software Testing & Quality Assurance
+
 - [ ] Concept of Quality: "Fit for purpose", Verification vs. Validation (Boehm's Law)
 - [ ] Psychology of Testing: Finding errors, developer bias
 - [ ] Levels of Testing: Unit, Integration (Top-Down Stubs, Bottom-Up Drivers, Regression, Smoke), System, Acceptance (Alpha & Beta)
@@ -142,7 +148,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] ISO 9000 & 9001 Standards: 7-Step Certification Process & Document Control
 - [ ] SEI Capability Maturity Model Integration (CMMI Levels 1 to 5)
 
-### Unit 7: CASE Tools & Dependability
+### 🛡️ Unit 7: CASE Tools & Dependability
+
 - [ ] CASE Tools Architecture & Central Repository Functions
 - [ ] Upper CASE vs. Lower CASE vs. Integrated CASE (I-CASE)
 - [ ] Integrating CASE Tools with Scrum / Agile Sprints
@@ -151,7 +158,8 @@ Use this Markdown checklist to track your exam readiness:
 - [ ] Safety Engineering & Hazard Analysis (Safety-Critical Systems)
 - [ ] Security Engineering: CIA Triad & Threat Modeling
 
-### Unit 8: Advanced Software Engineering
+### 🚀 Unit 8: Advanced Software Engineering
+
 - [ ] Software Reuse: Benefits, inhibitors (NIH Syndrome), and 4 levels of reuse
 - [ ] Component-Based Software Engineering (CBSE): Component definitions, Provides vs. Requires interfaces
 - [ ] CBSE Framework Activities: Qualification, Adaptation, Composition, Evolution ($Q-A-C-E$)

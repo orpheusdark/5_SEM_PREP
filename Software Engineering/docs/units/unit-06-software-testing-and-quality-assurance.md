@@ -21,17 +21,17 @@ status: complete
 
 ---
 
-## A. Topic Overview
+## 🗺️ A. Topic Overview
 
-### 1. What is this topic about?
+### ✨ 1. What is this topic about?
 Software Testing is the systematic execution of software under controlled conditions to uncover defects and ensure fitness for purpose. This unit examines the **Psychology of Testing**, **Levels of Testing (Unit, Integration, System, Acceptance)**, the **IEEE 829 Test Plan standard**, **Black-Box testing techniques (Boundary Value Analysis, Equivalence Partitioning, Pairwise Testing, State-Based Testing)**, **White-Box testing**, **Software Quality Assurance (SQA)**, **McCall's 11 Quality Factors**, and **ISO 9000/9001 Certification**.
 
-### 2. Why does it matter?
+### ✨ 2. Why does it matter?
 Testing is the primary defense against software failure. In the exams, **Boundary Value Analysis (BVA)** and **McCall's Quality Factors** appear consistently as 4-mark and 5-mark questions!
 
 ---
 
-## B. Explain Like I Am Learning It for the First Time
+## ✨ B. Explain Like I Am Learning It for the First Time
 
 Think of crash-testing a new family automobile:
 - The manufacturer doesn't just ask the engineer who designed the car: *"Did you build it well?"*
@@ -43,9 +43,9 @@ Think of crash-testing a new family automobile:
 
 ---
 
-## C. Detailed Exam Notes
+## 📝 C. Detailed Exam Notes
 
-### 1. Quality & The Psychology of Testing
+### 🧪 1. Quality & The Psychology of Testing
 - **Definition of Quality:** Quality is defined as "fitness for use and purpose" (Joseph Juran) and meeting or exceeding customer requirements in terms of functionality, reliability, durability, and performance.
 - **The Psychology of Testing (Glenford Myers):**
   - Testing is the process of executing a program with the **intent of finding errors** (not proving that it has no errors!).
@@ -54,7 +54,7 @@ Think of crash-testing a new family automobile:
 
 ---
 
-### 2. Levels of Software Testing (The Testing Hierarchy)
+### 🧪 2. Levels of Software Testing (The Testing Hierarchy)
 
 ```mermaid
 flowchart TD
@@ -77,7 +77,7 @@ flowchart TD
 
 ---
 
-### 3. Test Plan Structure (IEEE 829 Standard)
+### 📚 3. Test Plan Structure (IEEE 829 Standard)
 The test plan is the master governance document outlining testing activities.
 **8 Steps to Create a Test Plan as per IEEE 829 (Slide 15):**
 1. *Analyze the Product:* Understand architecture, customer requirements, and constraints.
@@ -91,14 +91,14 @@ The test plan is the master governance document outlining testing activities.
 
 ---
 
-### 4. Black-Box Testing Techniques (Exam Heavyweight!)
+### 🧪 4. Black-Box Testing Techniques (Exam Heavyweight!)
 
-#### A. Boundary Value Analysis (BVA)
+#### 🧪 A. Boundary Value Analysis (BVA)
 Errors cluster disproportionately at input boundaries rather than in the center of input domains.
 - For an input domain bounded by $[Min, Max]$, BVA selects 7 test values:
   $$\{Min - 1, \; Min, \; Min + 1, \; \text{Nominal (Typical)}, \; Max - 1, \; Max, \; Max + 1\}$$
 
-#### Official Slide 31 Solved Problem: Age Range $[18, 30]$
+#### ✨ Official Slide 31 Solved Problem: Age Range $[18, 30]$
 - Input: Age between 18 and 30 inclusive.
 - Minimum = 18, Maximum = 30.
 - **The Complete BVA Test Suite:**
@@ -117,25 +117,25 @@ Errors cluster disproportionately at input boundaries rather than in the center 
                (Min-1)(Min)(Min+1)   (Nominal)  (Max-1)(Max)(Max+1)
 ```
 
-#### B. Equivalence Class Partitioning (ECP)
+#### ✨ B. Equivalence Class Partitioning (ECP)
 Divides the input domain into classes of data from which test cases can be derived:
 - *Valid Equivalence Class:* Represents valid inputs to the program.
 - *Invalid Equivalence Class:* Represents erroneous inputs that must be rejected.
 - *Rule:* One test case covers multiple valid classes; separate test cases must be used for each invalid class.
 
-#### C. Pairwise Testing (All-Pairs Combinatorial Testing - Slide 32–35)
+#### 🧪 C. Pairwise Testing (All-Pairs Combinatorial Testing - Slide 32–35)
 - **Concept:** Most software defects are triggered by either a single input parameter or an interaction between two parameters (pairwise interactions).
 - **Slide 33–35 Example:**
   - An application has a list box with 10 elements ($0-9$), a checkbox (Checked/Unchecked: 2 states), and radio buttons (Option A/B/C: 3 states).
   - *Exhaustive testing:* Generates $> 4,000$ combinations!
   - *Pairwise testing:* Utilizes **Orthogonal Arrays** to test all pairs of input combinations, reducing test cases by **over 90%** while retaining high defect detection capability.
 
-#### D. State-Based Testing (State Transition Testing)
+#### 🧪 D. State-Based Testing (State Transition Testing)
 Tests software where output depends not only on current input, but on **prior system state**. Modeled using State Transition Diagrams and State Tables (States, Events, Guards, Actions).
 
 ---
 
-### 5. McCall's Software Quality Factor Model (100% Guaranteed Question!)
+### ❓ 5. McCall's Software Quality Factor Model (100% Guaranteed Question!)
 
 Developed by Jim McCall in 1977. Organizes 11 software quality factors into **3 Perspectives**:
 
@@ -177,7 +177,7 @@ graph TD
 
 ---
 
-### 6. Quality Management & ISO 9000 / 9001 Standards
+### 📚 6. Quality Management & ISO 9000 / 9001 Standards
 - **Quality Assurance (QA) vs Quality Control (QC):**
   - *QA (Process-Oriented / Prevention):* Proactive activities ensuring the development process is capable of producing defect-free products (Audits, Training, Standards).
   - *QC (Product-Oriented / Detection):* Reactive activities focused on identifying defects in the actual product (Testing, Code Reviews).
@@ -195,7 +195,7 @@ graph TD
 
 ---
 
-## D. Worked Examples: Complete Test Case Specification (IEEE 829 Format)
+## 📋 D. Worked Examples: Complete Test Case Specification (IEEE 829 Format)
 
 **Test Case ID:** `TC-AUTH-BVA-01`  
 **Test Suite:** User Registration Validation  
@@ -214,7 +214,7 @@ graph TD
 
 ---
 
-## E. Code Implementation: Automated BVA Test Harness in Python
+## ✨ E. Code Implementation: Automated BVA Test Harness in Python
 
 ```python
 """
@@ -265,9 +265,9 @@ if __name__ == "__main__":
 
 ---
 
-## F. Memory and Understanding Techniques
+## ✨ F. Memory and Understanding Techniques
 
-### 1. Mnemonics for McCall's 11 Factors
+### ✨ 1. Mnemonics for McCall's 11 Factors
 - **The 3 Categories:** **"O-R-T"** -> Product **O**peration, Product **R**evision, Product **T**ransition.
 - **Product Operation (5 Factors):** **"C-R-E-I-U"** -> **C**orrectness, **R**eliability, **E**fficiency, **I**ntegrity, **U**sability.
   *Memory Trick:* **C**lever **R**esearchers **E**njoy **I**ntelligent **U**sers.
@@ -276,7 +276,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Exam Tips
+## 📝 G. Common Mistakes & Exam Tips
 - **Stub vs Driver Trap (2-Mark Question):**
   - **Stub:** A dummy module called by the module under test; used in **Top-Down Integration**.
   - **Driver:** A test harness that calls the module under test; used in **Bottom-Up Integration**.
@@ -286,16 +286,16 @@ if __name__ == "__main__":
 
 ---
 
-## H. Quick Revision & Rapid Recall
+## 📝 H. Quick Revision & Rapid Recall
 
-### 5-Point Summary
+### 🧾 5-Point Summary
 1. The 4 levels of testing are Unit, Integration, System, and Acceptance.
 2. Top-down integration uses Stubs; bottom-up integration uses Drivers.
 3. BVA selects 7 points: $Min-1, Min, Min+1, Nominal, Max-1, Max, Max+1$.
 4. McCall's model classifies 11 factors into Product Operation, Revision, and Transition.
 5. ISO 9001 certifies an organization's Quality Management System (QMS), not a specific piece of software.
 
-### Rapid-Recall Flash Questions
+### ❓ Rapid-Recall Flash Questions
 1. *Q: What are the 3 categories in McCall's Factor Model?*  
    **A:** Product Operation, Product Revision, and Product Transition.
 2. *Q: For input range $[18, 30]$, what are the invalid BVA test cases?*  
@@ -311,14 +311,14 @@ if __name__ == "__main__":
 
 ## 🧠 Interactive Practice Quiz
 
-### Question 1 (MCQ)
+### ❓ Question 1 (MCQ)
 Which McCall quality factor evaluates the effort required to transfer software from a Windows operating system to a Linux platform?
 - A) Interoperability
 - B) Portability
 - C) Reusability
 - D) Flexibility
 
-### Question 2 (Trap Question)
+### ❓ Question 2 (Trap Question)
 In integration testing, a developer replaces a missing sub-function with a simple dummy script that prints "Calculation OK" and returns 0. This dummy script is known as a:
 - A) Test Driver
 - B) Test Stub

@@ -6,7 +6,7 @@
 
 ## 1. 🧮 Cyclomatic Complexity Metrics (Thomas J. McCabe, 1976)
 
-### Formulas
+### 🧮 Formulas
 1. **Edge-Node Formula:**
    $$V(G) = E - N + 2P$$
    - $E$: Number of directed edges in the Control Flow Graph (CFG)
@@ -22,7 +22,7 @@
    $$V(G) = R$$
    - $R$: Number of enclosed regions inside the planar graph $+ 1$ (the infinite outer region).
 
-### Complexity Interpretation Table
+### 💻 Complexity Interpretation Table
 | $V(G)$ Value | Risk Level | Software Testability |
 | :---: | :---: | :--- |
 | **1 – 10** | 🟢 Low Risk | Simple program; highly testable; easy to maintain. |
@@ -34,7 +34,7 @@
 
 ## 2. 🧮 Function Point Analysis (FPA — Allan Albrecht, IBM, 1979)
 
-### 1. Functional Complexity Weights Table
+### 💻 1. Functional Complexity Weights Table
 | Functional Unit | Low | Average | High |
 | :--- | :---: | :---: | :---: |
 | **External Inputs (EI)** | 3 | **4** | 6 |
@@ -43,7 +43,7 @@
 | **Internal Logical Files (ILF)** | 7 | **10** | 15 |
 | **External Interface Files (EIF)** | 5 | **7** | 10 |
 
-### 2. Formulas
+### 🧮 2. Formulas
 1. **Unadjusted Function Points ($UFP$):**
    $$UFP = \sum_{i=1}^5 (\text{Count}_i \times \text{Weight}_i)$$
 
@@ -64,13 +64,13 @@
 
 ## 3. 🧮 Halstead Software Science Metrics (Maurice Halstead, 1977)
 
-### Primitive Parameters
+### ✨ Primitive Parameters
 - $n_1$: Count of **unique operators** (keywords, arithmetic, logical symbols: `if`, `while`, `+`, `=`, `;`)
 - $n_2$: Count of **unique operands** (variables, constants, strings: `x`, `sum`, `3.14`, `"hello"`)
 - $N_1$: Count of **total occurrences of operators**
 - $N_2$: Count of **total occurrences of operands**
 
-### Formulas
+### 🧮 Formulas
 | Metric Name | Symbol | Exact Formula | Unit |
 | :--- | :---: | :--- | :---: |
 | **Program Vocabulary** | $n$ | $n = n_1 + n_2$ | Unique tokens |
@@ -106,7 +106,7 @@
 
 ## 6. 📐 Coupling & Cohesion Reference Hierarchies
 
-### Cohesion Hierarchy (Strive for HIGHEST)
+### 🏗️ Cohesion Hierarchy (Strive for HIGHEST)
 1. **Functional (Best):** Single well-defined mathematical or logical function (`sin(x)`).
 2. **Sequential:** Output of one step is direct input to the next step.
 3. **Communicational:** Functions operate on the exact same input/output data.
@@ -115,7 +115,7 @@
 6. **Logical:** Functions perform similar categories of operations chosen by a flag.
 7. **Coincidental (Worst):** Completely unrelated tasks grouped together randomly.
 
-### Coupling Hierarchy (Strive for LOWEST)
+### 🏗️ Coupling Hierarchy (Strive for LOWEST)
 1. **No Direct (Best):** Modules do not communicate directly.
 2. **Data:** Modules communicate via simple primitive parameters (`int`, `float`).
 3. **Stamp:** Modules pass entire composite records/structs when only part is needed.

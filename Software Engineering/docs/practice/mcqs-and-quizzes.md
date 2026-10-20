@@ -12,9 +12,9 @@ status: complete
 
 ---
 
-### Unit 1: Introduction & Process Models
+### 🧭 Unit 1: Introduction & Process Models
 
-#### Q1. Software is defined as:
+#### ✨ Q1. Software is defined as:
 - A) A collection of executable programs only.
 - B) Programs + Data Structures + Documentation.
 - C) Executable machine code + Operating System.
@@ -30,7 +30,7 @@ status: complete
 </details>
  By formal engineering definition, software consists of instructions (code), data structures that enable manipulation, and documents that describe its use.
 
-#### Q2. Why does software NOT exhibit the classic hardware bathtub failure curve?
+#### ✨ Q2. Why does software NOT exhibit the classic hardware bathtub failure curve?
 - A) Software is immune to any form of defects.
 - B) Software has no physical components and deteriorates due to maintenance side-effects rather than physical wear.
 - C) Software fails only during the first 30 days of release.
@@ -46,7 +46,7 @@ status: complete
 </details>
  Hardware wears out due to physical friction and environmental degradation. Software deteriorates when maintenance changes cause uncoordinated side-effects.
 
-#### Q3. In which SDLC model is explicit Risk Analysis conducted in a dedicated quadrant?
+#### 🔄 Q3. In which SDLC model is explicit Risk Analysis conducted in a dedicated quadrant?
 - A) Waterfall Model
 - B) RAD Model
 - C) Barry Boehm's Spiral Model
@@ -62,7 +62,7 @@ status: complete
 </details>
  The Spiral Model is explicitly risk-driven, featuring a dedicated Risk Analysis quadrant (Quadrant 2).
 
-#### Q4. What are the 4 bedrock layers of Software Engineering technology?
+#### ✨ Q4. What are the 4 bedrock layers of Software Engineering technology?
 - A) Planning, Coding, Testing, Deployment
 - B) A Quality Focus, Process, Methods, Tools
 - C) Software, Hardware, Network, People
@@ -79,11 +79,11 @@ status: complete
 
 
 
-### Unit 2: Software Project Management
+### 📊 Unit 2: Software Project Management
 
 
 
-#### Q5. The 4 P's of the software management spectrum are:
+#### 📊 Q5. The 4 P's of the software management spectrum are:
 
 - A) Planning, Programming, Performance, Profit
 
@@ -99,7 +99,7 @@ status: complete
 Correct Answer: B**  
 > *Explanation:* People (human capital), Product (objectives/scope), Process (SDLC activities), Project (planning/control).
 
-#### Q6. If a risk has a probability of 0.40 and an impact cost of $50,000, its Risk Exposure ($RE$) is:
+#### 📊 Q6. If a risk has a probability of 0.40 and an impact cost of $50,000, its Risk Exposure ($RE$) is:
 - A) $125,000
 - B) $50,040
 - C) $20,000
@@ -117,9 +117,9 @@ Correct Answer: B**
 
 ---
 
-### Unit 3: Requirements Engineering
+### 📋 Unit 3: Requirements Engineering
 
-#### Q7. Which IEEE standard defines the format and contents of a Software Requirements Specification (SRS)?
+#### 📚 Q7. Which IEEE standard defines the format and contents of a Software Requirements Specification (SRS)?
 - A) IEEE 829
 - B) IEEE 830
 - C) IEEE 1074
@@ -135,7 +135,7 @@ Correct Answer: B**
 </details>
  IEEE 829 is for Test Documentation; IEEE 830 is for SRS.
 
-#### Q8. In a Use Case Diagram, an optional feature that executes only when a specific conditional trigger occurs is modeled using:
+#### 🔄 Q8. In a Use Case Diagram, an optional feature that executes only when a specific conditional trigger occurs is modeled using:
 - A) `<<include>>`
 - B) `<<extend>>`
 - C) Generalization
@@ -152,11 +152,11 @@ Correct Answer: B**
 
 
 
-### Unit 4: Structured System Design
+### 🏗️ Unit 4: Structured System Design
 
 
 
-#### Q9. The ideal architectural design objective is to achieve:
+#### 🏗️ Q9. The ideal architectural design objective is to achieve:
 
 - A) High Coupling and High Cohesion
 
@@ -171,7 +171,7 @@ Correct Answer: B**
 </details>
 Correct Answer: C (The Golden Rule: High Cohesion, Low Coupling)**
 
-#### Q10. Two modules share a common global variable array in memory. What type of coupling exists between them?
+#### 🏗️ Q10. Two modules share a common global variable array in memory. What type of coupling exists between them?
 - A) Data Coupling
 - B) Stamp Coupling
 - C) Common Coupling
@@ -184,7 +184,7 @@ Correct Answer: C (The Golden Rule: High Cohesion, Low Coupling)**
 
 
 
-#### Q11. Which type of cohesion is exhibited when a module performs a single, well-defined mathematical function like `compute_tangent(x)`?
+#### 🏗️ Q11. Which type of cohesion is exhibited when a module performs a single, well-defined mathematical function like `compute_tangent(x)`?
 
 - A) Functional Cohesion
 
@@ -201,9 +201,9 @@ Correct Answer: A (Functional Cohesion — the highest and best)**
 
 ---
 
-### Unit 5: Coding, Metrics & Unit Testing
+### 🧮 Unit 5: Coding, Metrics & Unit Testing
 
-#### Q12. For a program control graph with 11 edges, 8 nodes, and 1 connected component, the Cyclomatic Complexity $V(G)$ is:
+#### 💻 Q12. For a program control graph with 11 edges, 8 nodes, and 1 connected component, the Cyclomatic Complexity $V(G)$ is:
 - A) 3
 - B) 4
 - C) 5
@@ -219,7 +219,7 @@ Correct Answer: A (Functional Cohesion — the highest and best)**
 </details>
  $V(G) = E - N + 2P = 11 - 8 + 2(1) = 5$.
 
-#### Q13. In Halstead's metrics, what is the Stroud number divisor used to calculate programming time in seconds?
+#### 🧮 Q13. In Halstead's metrics, what is the Stroud number divisor used to calculate programming time in seconds?
 - A) 60
 - B) 3600
 - C) 18
@@ -236,11 +236,11 @@ Correct Answer: A (Functional Cohesion — the highest and best)**
 
 
 
-### Unit 6: Software Testing & Quality Assurance
+### 🧪 Unit 6: Software Testing & Quality Assurance
 
 
 
-#### Q14. In Boundary Value Analysis for the valid range $[18, 30]$, which pair represents the **invalid** boundary test inputs?
+#### 🧪 Q14. In Boundary Value Analysis for the valid range $[18, 30]$, which pair represents the **invalid** boundary test inputs?
 
 - A) 18 and 30
 
@@ -255,7 +255,7 @@ Correct Answer: A (Functional Cohesion — the highest and best)**
 </details>
 Correct Answer: C ($Min - 1 = 17$ and $Max + 1 = 31$)**
 
-#### Q15. In integration testing, a dummy routine that simulates a called sub-module is called a:
+#### 🧪 Q15. In integration testing, a dummy routine that simulates a called sub-module is called a:
 - A) Driver
 - B) Stub
 - C) Proxy
@@ -268,7 +268,7 @@ Correct Answer: C ($Min - 1 = 17$ and $Max + 1 = 31$)**
 
 
 
-#### Q16. Which McCall quality factor measures the ease with which software can be transferred from Windows to Linux?
+#### 🧪 Q16. Which McCall quality factor measures the ease with which software can be transferred from Windows to Linux?
 
 - A) Maintainability
 
@@ -285,9 +285,9 @@ Correct Answer: C (Portability)**
 
 ---
 
-### Unit 7 & 8: CASE Tools & Advanced SE
+### 🛡️ Unit 7 & 8: CASE Tools & Advanced SE
 
-#### Q17. A server experiences an $MTTF$ of 490 hours and an $MTTR$ of 10 hours. What is its Availability?
+#### 🛡️ Q17. A server experiences an $MTTF$ of 490 hours and an $MTTR$ of 10 hours. What is its Availability?
 - A) 95.0%
 - B) 98.0%
 - C) 99.0%
@@ -303,7 +303,7 @@ Correct Answer: C (Portability)**
 </details>
  $A = 490 / (490 + 10) = 490 / 500 = 0.98 = 98.0\%$.
 
-#### Q18. Which of the following is a Hard Real-Time system?
+#### 🚀 Q18. Which of the following is a Hard Real-Time system?
 - A) Online multiplayer video game
 - B) Video streaming on Netflix
 - C) Automotive anti-lock braking system (ABS)

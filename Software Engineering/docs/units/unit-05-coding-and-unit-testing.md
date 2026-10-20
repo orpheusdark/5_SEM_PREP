@@ -21,21 +21,21 @@ status: complete
 
 ---
 
-## A. Topic Overview
+## 🗺️ A. Topic Overview
 
-### 1. What is this topic about?
+### ✨ 1. What is this topic about?
 Unit 5 bridges the transition from design models to executable code and quantitative software measurement. It covers **Programming Guidelines and Standards**, the foundational **SOLID principles**, the **Fagan Code Inspection process**, and three major quantitative software metrics:
 1. **McCabe's Cyclomatic Complexity** ($V(G)$) for control flow analysis.
 2. **Albrecht's Function Point Analysis (FPA)** for estimation of software size, productivity, and cost.
 3. **Maurice Halstead's Software Science Metrics** (token counts, program volume, difficulty, and programming effort).
 4. **Knot Count** for unstructured spaghetti code detection.
 
-### 2. Why does it matter?
+### ✨ 2. Why does it matter?
 In the the final exam, **Unit 5 is the primary source of numerical problems**. You can guarantee that either a Cyclomatic Complexity calculation or a Function Point calculation will appear in Section A/B!
 
 ---
 
-## B. Explain Like I Am Learning It for the First Time
+## ✨ B. Explain Like I Am Learning It for the First Time
 
 Imagine building a custom sports car:
 - You need clear manufacturing standards: metric bolts, standardized wire colors, and safety guidelines. That is **Coding Standards**.
@@ -45,21 +45,21 @@ Imagine building a custom sports car:
 
 ---
 
-## C. Detailed Exam Notes
+## 📝 C. Detailed Exam Notes
 
-### 1. Programming Principles, Standards & SOLID
+### 📚 1. Programming Principles, Standards & SOLID
 
-#### Coding Standards & Guidelines
+#### 📚 Coding Standards & Guidelines
 - **Line Length:** Standard practice dictates keeping source code lines $\le 80$ characters to maintain readability on split screens and diff tools.
 - **Naming Conventions:** Descriptive, consistent identifier names (CamelCase for classes, snake_case for functions/variables).
 - **Internal Documentation:** Meaningful header comments, module descriptions, and preconditions/postconditions.
 
-#### Foundational Software Design Principles
+#### 🧭 Foundational Software Design Principles
 - **KISS (Keep It Simple, Stupid):** Simplicity should be a key goal; unnecessary complexity breeds bugs.
 - **DRY (Don't Repeat Yourself):** Every piece of knowledge or logic must have a single, unambiguous representation within a system.
 - **YAGNI (You Aren't Gonna Need It):** Never add functionality until it is demonstrably necessary.
 
-#### The SOLID Principles (Must Memorize Acronym!)
+#### ✨ The SOLID Principles (Must Memorize Acronym!)
 1. **S — Single Responsibility Principle (SRP):** A class should have one, and only one, reason to change.
 2. **O — Open/Closed Principle (OCP):** Software entities should be open for extension, but closed for modification.
 3. **L — Liskov Substitution Principle (LSP):** Subtypes must be substitutable for their base types without altering program correctness.
@@ -68,7 +68,7 @@ Imagine building a custom sports car:
 
 ---
 
-### 2. Code Review & Fagan Inspection Process
+### 🔄 2. Code Review & Fagan Inspection Process
 Formal Technical Reviews (FTR) uncover between 60% and 90% of defects before testing begins.
 - **Fagan Inspection:** A formal, 6-phase defect detection technique developed by Michael Fagan at IBM.
   1. *Planning:* Moderator checks entry criteria, forms inspection team, and schedules sessions.
@@ -83,11 +83,11 @@ Formal Technical Reviews (FTR) uncover between 60% and 90% of defects before tes
 
 ---
 
-### 3. McCabe's Cyclomatic Complexity ($V(G)$)
+### 💻 3. McCabe's Cyclomatic Complexity ($V(G)$)
 
 Developed by Thomas J. McCabe in 1976. Measures the structural complexity of a program based on its **Control Flow Graph (CFG)**. It defines the number of **independent paths** required for 100% branch/path testing.
 
-#### Mathematical Formulas
+#### 🧮 Mathematical Formulas
 1. **Formula 1 (Edges and Nodes):**
    $$V(G) = E - N + 2P$$
    *(where $E$ = number of edges, $N$ = number of nodes, and $P$ = number of connected components, normally $P = 1$ for a single program).*
@@ -98,7 +98,7 @@ Developed by Thomas J. McCabe in 1976. Measures the structural complexity of a p
    $$V(G) = R$$
    *(where $R$ is the number of enclosed planar regions in the graph, including the infinite outer region).*
 
-#### Slide 20 Solved Graph
+#### ✨ Slide 20 Solved Graph
 - A control flow graph with $N = 7$ nodes and $E = 7$ edges:
   $$V(G) = 7 - 7 + 2(1) = 2$$
   *(Meaning there are 2 linearly independent execution paths through the code).*
@@ -118,18 +118,18 @@ flowchart TD
 
 ---
 
-### 4. Function Point Analysis (FPA) — Albrecht's Method
+### ✨ 4. Function Point Analysis (FPA) — Albrecht's Method
 
 Function Points measure the size of a software application based on the functional requirements from the user's perspective, independent of programming language.
 
-#### The 5 Information Domain Parameters (External Functional Units)
+#### ✨ The 5 Information Domain Parameters (External Functional Units)
 1. **External Inputs (EI):** Elementary inputs from outside the system that update internal logical files (e.g., input screens, registration forms).
 2. **External Outputs (EO):** Data leaving the system that provides information derived from processing (e.g., reports, invoices, calculated outputs).
 3. **External Inquiries (EQ):** Input-output combinations resulting in immediate data retrieval without updating files (e.g., search queries, balance inquiries).
 4. **Internal Logical Files (ILF):** User-identifiable groups of logically related data maintained entirely inside the system (e.g., database tables, master directories).
 5. **External Interface Files (EIF):** Files maintained by another application that are referenced by this software (e.g., shared lookup tables, external bank APIs).
 
-#### Standard Complexity Weighting Table
+#### 📚 Standard Complexity Weighting Table
 | Information Domain Characteristic | Low | Average | High |
 | :--- | :---: | :---: | :---: |
 | **External Inputs (EI)** | 3 | **4** | 6 |
@@ -138,7 +138,7 @@ Function Points measure the size of a software application based on the function
 | **Internal Logical Files (ILF)** | 7 | **10** | 15 |
 | **External Interface Files (EIF)** | 5 | **7** | 10 |
 
-#### Step-by-Step Calculation Formulas
+#### 🧮 Step-by-Step Calculation Formulas
 1. **Unadjusted Function Points ($UFP$):**
    $$UFP = \sum_{i=1}^{5} \sum_{j=1}^{3} (\text{Count}_{i,j} \times \text{Weight}_{i,j})$$
 2. **Value Adjustment Factor ($VAF$):**
@@ -149,7 +149,7 @@ Function Points measure the size of a software application based on the function
 
 ---
 
-### 5. Maurice Halstead's Software Science Metrics
+### 🧮 5. Maurice Halstead's Software Science Metrics
 
 Halstead evaluated software size and complexity based on primitive token counts.
 - **$n_1$:** Number of distinct (unique) operators (e.g., `+`, `-`, `if`, `while`, `(`, `;`).
@@ -157,7 +157,7 @@ Halstead evaluated software size and complexity based on primitive token counts.
 - **$N_1$:** Total occurrences of operators.
 - **$N_2$:** Total occurrences of operands.
 
-#### The Halstead Formulas
+#### 🧮 The Halstead Formulas
 1. **Program Vocabulary ($n$):**
    $$n = n_1 + n_2$$
 2. **Total Program Length ($N$):**
@@ -175,7 +175,7 @@ Halstead evaluated software size and complexity based on primitive token counts.
 
 ---
 
-### 6. Knot Count Metric (Slide 33)
+### 🧮 6. Knot Count Metric (Slide 33)
 - A **Knot** occurs when two control transfer arrows intersect each other on a line-by-line program listing.
 - A jump from line $a$ to line $b$ is represented as pair $(a, b)$.
 - Two jumps $(a, b)$ and $(p, q)$ create a knot if either:
@@ -186,9 +186,9 @@ Halstead evaluated software size and complexity based on primitive token counts.
 
 ---
 
-## D. Worked Examples: Complete Official Slide Solved Problems
+## 📝 D. Worked Examples: Complete Official Slide Solved Problems
 
-### Problem 1: Function Point Calculation (Exact Unit 5 Slides 24–26 Problem)
+### 🧮 Problem 1: Function Point Calculation (Exact Unit 5 Slides 24–26 Problem)
 **Given Data:**
 - Number of user inputs ($EI$) = 24 (Average weight = 4)
 - Number of user outputs ($EO$) = 46 (Average weight = 5)
@@ -229,7 +229,7 @@ $$\text{Cost per FP} = \frac{\$285,753.60}{408} = \mathbf{\$700.38 \text{ per FP
 
 ---
 
-### Problem 2: Cyclomatic Complexity for a C/Python Code Snippet
+### 💻 Problem 2: Cyclomatic Complexity for a C/Python Code Snippet
 ```python
 def check_admission(age: int, gpa: float, entrance_passed: bool) -> str:
     if age >= 18:                          # Predicate 1
@@ -249,7 +249,7 @@ def check_admission(age: int, gpa: float, entrance_passed: bool) -> str:
 
 ---
 
-## E. Code Implementation: Automated Cyclomatic Complexity & FPA Calculator in Python
+## 💻 E. Code Implementation: Automated Cyclomatic Complexity & FPA Calculator in Python
 
 ```python
 """
@@ -293,31 +293,31 @@ if __name__ == "__main__":
 
 ---
 
-## F. Memory and Understanding Techniques
+## ✨ F. Memory and Understanding Techniques
 
-### 1. Mnemonics
+### ✨ 1. Mnemonics
 - **The 5 SOLID Principles:** **S-O-L-I-D** -> **S**ingle responsibility, **O**pen/closed, **L**iskov substitution, **I**nterface segregation, **D**ependency inversion.
 - **FPA 5 Functional Units:** **"I-O-Q-F-E"** -> **I**nputs, **O**utputs, In**Q**uiries, **F**iles (Internal), **E**xternal interfaces.
 - **Cyclomatic Complexity:** **"E minus N plus 2"** -> $V(G) = E - N + 2P$.
 
 ---
 
-## G. Common Mistakes & Exam Tips
+## 📝 G. Common Mistakes & Exam Tips
 - **Predicate Node Trap in $V(G)$:** If an `if` statement has compound boolean operators (e.g., `if (A && B)`), it contains **TWO predicates**, not one! Each simple boolean condition counts as an independent decision.
 - **Halstead Stroud Number:** Remember that time calculation divides Effort by **18** ($T = E / 18$), representing 18 mental discriminations per second.
 
 ---
 
-## H. Quick Revision & Rapid Recall
+## 📝 H. Quick Revision & Rapid Recall
 
-### 5-Point Summary
+### 🧾 5-Point Summary
 1. SOLID principles ensure code is maintainable, decoupled, and extensible.
 2. Fagan inspection is a formal 6-phase review: Planning, Overview, Preparation, Inspection, Rework, Follow-up.
 3. Cyclomatic complexity $V(G) = E - N + 2P = P_{\text{pred}} + 1$.
 4. Function Points evaluate software size independently of language via 5 information units and 14 GSCs ($FP = UFP \times [0.65 + 0.01 \sum f_i]$).
 5. Halstead metrics measure code volume, difficulty, and programming time based on unique/total operators and operands.
 
-### Rapid-Recall Flash Questions
+### ❓ Rapid-Recall Flash Questions
 1. *Q: What is the formula for Cyclomatic Complexity using predicate nodes?*  
    **A:** $V(G) = P_{\text{pred}} + 1$.
 2. *Q: Name the 5 parameters used in Function Point Analysis.*  
@@ -333,14 +333,14 @@ if __name__ == "__main__":
 
 ## 🧠 Interactive Practice Quiz
 
-### Question 1 (Numerical MCQ)
+### ❓ Question 1 (Numerical MCQ)
 A control flow graph contains 14 edges and 10 nodes with 1 connected component. What is its Cyclomatic Complexity?
 - A) 4
 - B) 6
 - C) 8
 - D) 2
 
-### Question 2 (Trap Question)
+### ❓ Question 2 (Trap Question)
 In Function Point Analysis, if all 14 General System Characteristics are rated 0 (no influence), what is the Value Adjustment Factor ($VAF$)?
 - A) 0.00
 - B) 1.00

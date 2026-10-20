@@ -7,6 +7,7 @@ This study material is synthesized from the official course curriculum, authorit
 ---
 
 ## 🏛️ 1. Primary Course Materials
+
 - **Faculty:** Engineering & Technology, Department of Computer Science & Engineering.
 - **Subject:** Software Engineering (Subject Code: `303105253`).
 - **Academic Decks Analyzed:**
@@ -23,22 +24,24 @@ This study material is synthesized from the official course curriculum, authorit
 ---
 
 ## 📖 2. Foundational Textbooks & Academic Citations
-1. **Pressman, Roger S., & Maxim, Bruce R.** (2020). *Software Engineering: A Practitioner's Approach* (9th International Edition). McGraw-Hill Education.
-   - *Key Chapters:* Ch. 1–5 (Process Models), Ch. 8 (Requirements), Ch. 9–13 (Design & Architecture), Ch. 17–20 (Testing), Ch. 24–28 (Project Management & Metrics).
-2. **Sommerville, Ian.** (2016). *Software Engineering* (10th Edition). Pearson Education.
-   - *Key Chapters:* Ch. 2–3 (Agile & Processes), Ch. 4 (Requirements), Ch. 6–7 (Architecture & Design), Ch. 8 (Testing), Ch. 10–14 (Dependability, Reliability & Security), Ch. 15–21 (Reuse, CBSE & Distributed SE).
-3. **Boehm, Barry W.** (1988). "A Spiral Model of Software Development and Enhancement". *IEEE Computer*, 21(5), 61–72.
-4. **McCabe, Thomas J.** (1976). "A Complexity Measure". *IEEE Transactions on Software Engineering*, SE-2(4), 308–320.
-5. **Albrecht, Allan J.** (1979). "Measuring Application Development Productivity". *Proceedings of the Joint SHARE, GUIDE, and IBM Applied Software Engineering Symposium*, Monterey, CA, 83–92.
-6. **Halstead, Maurice H.** (1977). *Elements of Software Science*. Elsevier North-Holland.
-7. **Parnas, David L.** (1972). "On the Criteria to Be Used in Decomposing Systems into Modules". *Communications of the ACM*, 15(12), 1053–1058.
-8. **Fagan, Michael E.** (1976). "Design and Code Inspections to Reduce Errors in Program Development". *IBM Systems Journal*, 15(3), 182–211.
-9. **McCall, Jim A., Richards, Paul K., & Walters, Gene F.** (1977). *Factors in Software Quality*. US Rome Air Development Center Reports.
+
+1. **Pressman, Roger S., & Maxim, Bruce R.** (2020). _Software Engineering: A Practitioner's Approach_ (9th International Edition). McGraw-Hill Education.
+   - _Key Chapters:_ Ch. 1–5 (Process Models), Ch. 8 (Requirements), Ch. 9–13 (Design & Architecture), Ch. 17–20 (Testing), Ch. 24–28 (Project Management & Metrics).
+2. **Sommerville, Ian.** (2016). _Software Engineering_ (10th Edition). Pearson Education.
+   - _Key Chapters:_ Ch. 2–3 (Agile & Processes), Ch. 4 (Requirements), Ch. 6–7 (Architecture & Design), Ch. 8 (Testing), Ch. 10–14 (Dependability, Reliability & Security), Ch. 15–21 (Reuse, CBSE & Distributed SE).
+3. **Boehm, Barry W.** (1988). "A Spiral Model of Software Development and Enhancement". _IEEE Computer_, 21(5), 61–72.
+4. **McCabe, Thomas J.** (1976). "A Complexity Measure". _IEEE Transactions on Software Engineering_, SE-2(4), 308–320.
+5. **Albrecht, Allan J.** (1979). "Measuring Application Development Productivity". _Proceedings of the Joint SHARE, GUIDE, and IBM Applied Software Engineering Symposium_, Monterey, CA, 83–92.
+6. **Halstead, Maurice H.** (1977). _Elements of Software Science_. Elsevier North-Holland.
+7. **Parnas, David L.** (1972). "On the Criteria to Be Used in Decomposing Systems into Modules". _Communications of the ACM_, 15(12), 1053–1058.
+8. **Fagan, Michael E.** (1976). "Design and Code Inspections to Reduce Errors in Program Development". _IBM Systems Journal_, 15(3), 182–211.
+9. **McCall, Jim A., Richards, Paul K., & Walters, Gene F.** (1977). _Factors in Software Quality_. US Rome Air Development Center Reports.
 
 ---
 
 ## 📜 3. Formal Standards
-- **IEEE Std 830-1998:** *IEEE Recommended Practice for Software Requirements Specifications*.
-- **IEEE Std 829-2008:** *IEEE Standard for Software and System Test Documentation*.
-- **ISO/IEC 9001:2015:** *Quality management systems — Requirements*.
-- **ISO/IEC 25010:2011:** *Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE)*.
+
+- **IEEE Std 830-1998:** _IEEE Recommended Practice for Software Requirements Specifications_.
+- **IEEE Std 829-2008:** _IEEE Standard for Software and System Test Documentation_.
+- **ISO/IEC 9001:2015:** _Quality management systems — Requirements_.
+- **ISO/IEC 25010:2011:** _Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE)_.

@@ -52,7 +52,7 @@ flowchart TD
 
 ## 📋 Unit-Wise Question Bank Breakdown
 
-### Unit 1: Introduction & Process Models
+### 🧭 Unit 1: Introduction & Process Models
 1. **[BT-1 | 2 Marks]** Define Software Engineering according to IEEE. State the 3-part definition of Software.  
    *(Keywords: systematic, disciplined, quantifiable, instructions, data structures, documents)* $\rightarrow$ See [Practice/Short-Answers#Q1-1](../practice/short-answers-2-marks.md#q1-1)
 2. **[BT-2 | 4 Marks]** Explain the difference between hardware wear-out and software deterioration with suitable curves.  
@@ -64,7 +64,7 @@ flowchart TD
 
 ---
 
-### Unit 2: Software Project Management
+### 📊 Unit 2: Software Project Management
 1. **[BT-1 | 2 Marks]** What is the Management Spectrum? Name the 4 P's.  
    *(Keywords: People, Product, Process, Project)* $\rightarrow$ See [Practice/Short-Answers#Q2-1](../practice/short-answers-2-marks.md#q2-1)
 2. **[BT-2 | 4 Marks]** State and explain Barry Boehm's W5HH principle.  
@@ -74,7 +74,7 @@ flowchart TD
 
 ---
 
-### Unit 3: Requirements Engineering
+### 📋 Unit 3: Requirements Engineering
 1. **[BT-2 | 2 Marks]** Distinguish between Functional and Non-Functional requirements with two examples each.  
    *(Keywords: what the system does vs quality/constraints, response time)* $\rightarrow$ See [Practice/Short-Answers#Q3-1](../practice/short-answers-2-marks.md#q3-1)
 2. **[BT-2 | 4 Marks]** List and explain 5 desirable characteristics of a good SRS document as per IEEE 830 standard.  
@@ -84,7 +84,7 @@ flowchart TD
 
 ---
 
-### Unit 4: Structured System Design
+### 🏗️ Unit 4: Structured System Design
 1. **[BT-1 | 2 Marks]** State the Golden Rule of Software Design regarding Coupling and Cohesion.  
    *(Keywords: maximize cohesion, minimize coupling)* $\rightarrow$ See [Practice/Short-Answers#Q4-1](../practice/short-answers-2-marks.md#q4-1)
 2. **[BT-4 | 5 Marks]** Explain all 7 levels of Module Cohesion from highest to lowest with examples.  
@@ -96,7 +96,7 @@ flowchart TD
 
 ---
 
-### Unit 5: Coding, Metrics & Unit Testing
+### 🧮 Unit 5: Coding, Metrics & Unit Testing
 1. **[BT-3 | 5 Marks]** Compute the Cyclomatic Complexity $V(G)$ for a given Control Flow Graph and determine the number of independent basis paths.  
    *(Keywords: $V(G) = E - N + 2P$, predicate nodes, basis paths)* $\rightarrow$ See [Practice/Problems-and-Solutions#Prob-1](../practice/solved-numericals.md#prob-1)
 2. **[BT-5 | 5 Marks]** Compute Unadjusted Function Points, Adjusted FP, Productivity, and Cost per FP for the slide problem (24 EI, 46 EO, 8 EQ, 4 ILF, 2 EIF, $\sum f_i = 43$).  
@@ -106,7 +106,7 @@ flowchart TD
 
 ---
 
-### Unit 6: Software Testing & Quality Assurance
+### 🧪 Unit 6: Software Testing & Quality Assurance
 1. **[BT-3 | 5 Marks]** Design a complete Boundary Value Analysis (BVA) test suite for an age input field accepting values in the range $[18, 30]$.  
    *(Keywords: 7 values: 17, 18, 19, 24, 29, 30, 31, valid vs invalid boundaries)* $\rightarrow$ See [Practice/Problems-and-Solutions#Prob-3](../practice/solved-numericals.md#prob-3)
 2. **[BT-2 | 5 Marks]** Explain McCall's Software Quality Model. Describe the 11 quality factors categorized into Product Operation, Revision, and Transition.  
@@ -116,7 +116,7 @@ flowchart TD
 
 ---
 
-### Unit 7: CASE Tools & Dependability
+### 🛡️ Unit 7: CASE Tools & Dependability
 1. **[BT-2 | 4 Marks]** What is a CASE tool? Explain the role of the Central Repository in integrating Upper and Lower CASE tools.  
    *(Keywords: single source of truth, data consistency, front-end, back-end)* $\rightarrow$ See [Practice/Long-Answers#Q7-1](../practice/long-answers-4-and-5-marks.md#q7-1)
 2. **[BT-3 | 4 Marks]** A server has an $MTTF$ of 990 hours and an $MTTR$ of 10 hours. Calculate $MTBF$ and Availability percentage.  
@@ -124,7 +124,7 @@ flowchart TD
 
 ---
 
-### Unit 8: Advanced Software Engineering
+### 🚀 Unit 8: Advanced Software Engineering
 1. **[BT-2 | 5 Marks]** What is Component-Based Software Engineering (CBSE)? Explain its 4 framework activities.  
    *(Keywords: Component Qualification, Adaptation, Composition, Evolution)* $\rightarrow$ See [Practice/Long-Answers#Q8-1](../practice/long-answers-4-and-5-marks.md#q8-1)
 2. **[BT-2 | 4 Marks]** Differentiate between Hard Real-Time systems and Soft Real-Time systems with 2 practical examples each.  

@@ -20,19 +20,19 @@ status: complete
 
 ---
 
-## A. Topic Overview
+## 🗺️ A. Topic Overview
 
-### 1. What is this topic about?
+### ✨ 1. What is this topic about?
 
 Software Design is the engineering phase where customer requirements (from SRS) are translated into an actionable blueprint for software construction. This unit explores **Fundamental Design Concepts (Abstraction, Modularity, Information Hiding, Refactoring)**, **Architectural Styles & Patterns (Data-Centered, Pipe & Filter, Layered, Call & Return, Object-Oriented)**, the **Architecture Tradeoff Analysis Method (ATAM)**, **Peter Chen's ER Model**, **Logical vs Physical DFDs**, and the industry-critical concepts of **Coupling and Cohesion**.
 
-### 2. Why does it matter?
+### ✨ 2. Why does it matter?
 
 Design is where software quality is fostered. A poorly designed codebase degenerates into an unmaintainable "Big Ball of Mud." High coupling and low cohesion lead to fragile code where fixing a bug in one module silently breaks three unrelated features.
 
 ---
 
-## B. Explain Like I Am Learning It for the First Time
+## ✨ B. Explain Like I Am Learning It for the First Time
 
 Think of designing a modern smartphone:
 
@@ -44,9 +44,9 @@ Think of designing a modern smartphone:
 
 ---
 
-## C. Detailed Exam Notes
+## 📝 C. Detailed Exam Notes
 
-### 1. Fundamental Software Design Concepts (Core Exam Checklist)
+### 🧭 1. Fundamental Software Design Concepts (Core Exam Checklist)
 
 1. **Abstraction (Hide Irrelevant Data):** Permitting engineers to focus on high-level problem solving without getting bogged down in low-level bit manipulation.
    - _Procedural Abstraction:_ Named sequence of instructions with a specific function (e.g., `open_door()`).
@@ -61,7 +61,7 @@ Think of designing a modern smartphone:
 
 ---
 
-### 2. Software Architectural Styles and Patterns
+### 🏗️ 2. Software Architectural Styles and Patterns
 
 ```mermaid
 graph TD
@@ -73,13 +73,13 @@ graph TD
     Arch --> Lay["5. Layered (N-Tier)<br>(UI -> Logic -> DB)"]
 ```
 
-#### 1. Data-Centered Architecture (Repository / Blackboard)
+#### 🏗️ 1. Data-Centered Architecture (Repository / Blackboard)
 
 - **Concept:** A central data store (database or blackboard) sits at the core. Multiple independent client software components access and modify the data repository.
 - **Pros:** Highly scalable data sharing; independent client evolution.
 - **Cons:** Central repository is a single point of failure and performance bottleneck.
 
-#### 2. Data Flow Architecture (Pipe and Filter)
+#### 🏗️ 2. Data Flow Architecture (Pipe and Filter)
 
 - **Concept:** The system is viewed as a series of transformations on consecutive streams of input data.
 - **Components:**
@@ -89,17 +89,17 @@ graph TD
 - **Pros:** Easy to understand, reusable filters, high concurrency.
 - **Cons:** Interactive applications are difficult to model; overhead of parsing and unparsing data streams.
 
-#### 3. Call and Return Architecture
+#### 🏗️ 3. Call and Return Architecture
 
 - **Concept:** Traditional hierarchical program structure. Control starts at a main program and branches out into subroutines. Sub-styles include Remote Procedure Calls (RPC) in client-server systems.
 
-#### 4. Object-Oriented Architecture
+#### 🏗️ 4. Object-Oriented Architecture
 
 - **Concept:** Components encapsulate data and the operations that manipulate that data. Communication occurs through explicit message passing.
 - **Pros:** Easy to maintain and reuse; maps directly to real-world domain concepts.
 - **Cons:** Overhead of object instantiation; message passing can lead to latency.
 
-#### 5. Layered Architecture (N-Tier Architecture)
+#### 🏗️ 5. Layered Architecture (N-Tier Architecture)
 
 - **Concept:** The system is organized hierarchically into layers. Each layer provides services to the layer immediately above it and consumes services from the layer immediately below it.
 - **Standard 3-Tier Web Hierarchy:**
@@ -111,7 +111,7 @@ graph TD
 
 ---
 
-### 3. Architecture Tradeoff Analysis Method (ATAM)
+### 🏗️ 3. Architecture Tradeoff Analysis Method (ATAM)
 
 A formal 9-step scenario-based method developed by the Software Engineering Institute (SEI) to evaluate architectural decisions against quality goals (Performance, Availability, Security, Modifiability).
 
@@ -128,7 +128,7 @@ A formal 9-step scenario-based method developed by the Software Engineering Inst
 
 ---
 
-### 4. Coupling and Cohesion (The Most Important Topic in Unit 4!)
+### 🏗️ 4. Coupling and Cohesion (The Most Important Topic in Unit 4!)
 
 > [!IMPORTANT]
 > **The Golden Rule of Software Design:** **MAXIMIZE Cohesion** (internal strength of a module) and **MINIMIZE Coupling** (interdependence between modules).
@@ -140,7 +140,7 @@ flowchart LR
     end
 ```
 
-#### Detailed Types of Coupling (From Best to Worst)
+#### 🏗️ Detailed Types of Coupling (From Best to Worst)
 
 1. **No Direct Coupling (Best):** Modules are completely independent; communicate neither directly nor indirectly.
 2. **Data Coupling:** Modules communicate purely by passing simple, primitive scalar parameters (e.g., `calculate_tax(float income)`).
@@ -159,7 +159,7 @@ flowchart LR
     end
 ```
 
-#### Detailed Types of Cohesion (From Best to Worst)
+#### 🏗️ Detailed Types of Cohesion (From Best to Worst)
 
 1. **Functional Cohesion (Best):** Every instruction inside the module performs exactly one, and only one, well-defined mathematical or logical function (e.g., `compute_square_root()`).
 2. **Sequential Cohesion:** The output of one activity serves as the direct input to the next activity inside the same module (e.g., `read_file_and_parse_json()`).
@@ -171,16 +171,16 @@ flowchart LR
 
 ---
 
-### 5. Data Flow Modeling: Logical vs Physical DFD
+### 🔄 5. Data Flow Modeling: Logical vs Physical DFD
 
 - **Logical DFD:** Focuses strictly on business processes and data flows without reference to physical technology, hardware, or implementation details (e.g., "Verify Order", "Store Customer Data").
 - **Physical DFD:** Shows how the system is actually implemented in concrete reality (e.g., "Run Python validation script", "Write to PostgreSQL Customer Table on AWS RDS").
 
 ---
 
-## D. Worked Examples
+## 📝 D. Worked Examples
 
-### Problem: Identifying Coupling & Cohesion in Code
+### 🏗️ Problem: Identifying Coupling & Cohesion in Code
 
 **Analyze the following Python functions:**
 
@@ -208,7 +208,7 @@ def compute_circle_area(radius: float) -> float:
 
 ---
 
-## E. Code Implementation: Pipe and Filter Architectural Pattern
+## 🏗️ E. Code Implementation: Pipe and Filter Architectural Pattern
 
 ```python
 """
@@ -266,9 +266,9 @@ if __name__ == "__main__":
 
 ---
 
-## F. Memory and Understanding Techniques
+## ✨ F. Memory and Understanding Techniques
 
-### 1. Mnemonics for Cohesion & Coupling
+### 🏗️ 1. Mnemonics for Cohesion & Coupling
 
 - **Cohesion Levels (Best to Worst):** **"F-S-C-P-T-L-C"** -> **F**unctional, **S**equential, **C**ommunicational, **P**rocedural, **T**emporal, **L**ogical, **C**oincidental.
   _Memory Trick:_ **F**un **S**tudents **C**an **P**ass **T**he **L**ogic **C**ourse.
@@ -277,7 +277,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Exam Tips
+## 📝 G. Common Mistakes & Exam Tips
 
 - **The Coupling Hierarchy Error:** Students often confuse Data Coupling and Stamp Coupling.
   _Rule:_ If you pass a simple integer or string, it is **Data Coupling**. If you pass an entire object, dictionary, or struct when only a field is needed, it is **Stamp Coupling**.
@@ -285,9 +285,9 @@ if __name__ == "__main__":
 
 ---
 
-## H. Quick Revision & Rapid Recall
+## 📝 H. Quick Revision & Rapid Recall
 
-### 5-Point Summary
+### 🧾 5-Point Summary
 
 1. Good software design exhibits **High Cohesion and Low Coupling**.
 2. Abstraction hides internal implementation; Information Hiding limits accessibility of private data.
@@ -295,7 +295,7 @@ if __name__ == "__main__":
 4. ATAM is a formal 9-step scenario-based method for evaluating architectural trade-offs.
 5. Functional Cohesion is the best cohesion; Content Coupling is the worst coupling.
 
-### Rapid-Recall Flash Questions
+### ❓ Rapid-Recall Flash Questions
 
 1. _Q: What is the highest (best) form of cohesion?_  
    **A:** Functional Cohesion.
@@ -312,7 +312,7 @@ if __name__ == "__main__":
 
 ## 🧠 Interactive Practice Quiz
 
-### Question 1 (MCQ)
+### ❓ Question 1 (MCQ)
 
 Two software modules $M_1$ and $M_2$ both directly read and modify the same global configuration array stored in memory. What type of coupling exists between $M_1$ and $M_2$?
 
@@ -321,7 +321,7 @@ Two software modules $M_1$ and $M_2$ both directly read and modify the same glob
 - C) Common Coupling
 - D) Control Coupling
 
-### Question 2 (Trap Question)
+### ❓ Question 2 (Trap Question)
 
 A module named `Utilities` contains three functions: `calculate_tax()`, `render_3d_cube()`, and `send_bluetooth_packet()`. What type of cohesion does this module exhibit?
 

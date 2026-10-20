@@ -13,12 +13,12 @@ status: complete
 
 ---
 
-### Q1-1: Explain the difference between hardware wear-out and software deterioration. Draw and explain the curves. [4 Marks]
+### ✨ Q1-1: Explain the difference between hardware wear-out and software deterioration. Draw and explain the curves. [4 Marks]
 
 **Model Answer:**
 Physical hardware and digital software exhibit fundamentally different failure behaviors over their operational lifetimes:
 
-#### 1. Hardware Wear-Out (The Bathtub Curve)
+#### ✨ 1. Hardware Wear-Out (The Bathtub Curve)
 
 Hardware exhibits the classic **Bathtub Curve** with three distinct operational phases:
 
@@ -26,7 +26,7 @@ Hardware exhibits the classic **Bathtub Curve** with three distinct operational 
 2. _Steady-State Operational Life:_ Failure rate drops to a low, constant plateau where failures occur randomly.
 3. _Wear-Out Phase:_ Failure rate rises steeply toward the end of life due to physical friction, heat stress, oxidation, and mechanical degradation.
 
-#### 2. Software Deterioration Curve
+#### ✨ 2. Software Deterioration Curve
 
 Software does **not** wear out because it has no physical moving parts, friction, or environmental vulnerability.
 
@@ -47,15 +47,15 @@ Failure Rate                         Failure Rate
 
 ---
 
-### Q1-2: Explain Barry Boehm's Spiral Model with a neat diagram. Why is it called a Risk-Driven model? [5 Marks]
+### 🔄 Q1-2: Explain Barry Boehm's Spiral Model with a neat diagram. Why is it called a Risk-Driven model? [5 Marks]
 
 **Model Answer:**
 
-#### 1. Concept & Significance
+#### 🧭 1. Concept & Significance
 
 Proposed by Dr. Barry Boehm (1988), the **Spiral Model** is an evolutionary process model that couples the iterative nature of prototyping with the controlled, systematic aspects of the Waterfall model. It is explicitly called a **risk-driven model** because every cycle begins with an assessment of technical and managerial risks and uses prototyping to resolve them before committing to expensive full-scale development.
 
-#### 2. The 4 Quadrants of the Spiral
+#### ✨ 2. The 4 Quadrants of the Spiral
 
 The model is visualized as an expanding spiral traversing four quadrants:
 
@@ -85,14 +85,14 @@ graph TD
     Q1 --> Q2 --> Q3 --> Q4 --> Q1
 ```
 
-#### 3. Advantages & Applications
+#### ✨ 3. Advantages & Applications
 
 - _Advantages:_ Superb risk handling; realistic iterative development; changes accommodated smoothly.
 - _Applications:_ Large, high-budget, complex, safety-critical systems (e.g., aerospace systems, operating systems like Windows).
 
 ---
 
-### Q4-1: Explain all 7 levels of Module Cohesion from highest to lowest with examples. [5 Marks]
+### 🏗️ Q4-1: Explain all 7 levels of Module Cohesion from highest to lowest with examples. [5 Marks]
 
 **Model Answer:**
 **Cohesion** measures the degree to which elements within a single software module belong together functionally. Designers must strive for the **Highest Cohesion**.
@@ -126,7 +126,7 @@ Functional > Sequential > Communicational > Procedural > Temporal > Logical > Co
 
 ---
 
-### Q4-2: Explain all 7 levels of Module Coupling from best to worst. Why is Common Coupling dangerous? [5 Marks]
+### 🏗️ Q4-2: Explain all 7 levels of Module Coupling from best to worst. Why is Common Coupling dangerous? [5 Marks]
 
 **Model Answer:**
 **Coupling** measures the degree of interdependence and communication between distinct software modules. Designers must strive for the **Lowest Coupling**.
@@ -144,7 +144,7 @@ No Direct > Data > Stamp > Control > External > Common > Content
 6. **Common Coupling:** Multiple modules read and write to the same **Global Data Area** or shared memory.
 7. **Content Coupling (Worst / Pathological):** One module directly modifies or accesses the internal code, private data structures, or execution branches of another module.
 
-#### Why Common Coupling is Dangerous:
+#### 🏗️ Why Common Coupling is Dangerous:
 
 Common coupling introduces severe architectural fragility:
 
@@ -153,7 +153,7 @@ Common coupling introduces severe architectural fragility:
 
 ---
 
-### Q6-1: Explain McCall's Software Quality Model. Describe the 11 quality factors categorized into Product Operation, Revision, and Transition. [5 Marks]
+### 🔄 Q6-1: Explain McCall's Software Quality Model. Describe the 11 quality factors categorized into Product Operation, Revision, and Transition. [5 Marks]
 
 **Model Answer:**
 Developed by Jim McCall (1977), this model bridges the gap between user perspectives and technical software metrics by organizing **11 quality factors** into **3 operational perspectives (O-R-T)**:
@@ -166,7 +166,7 @@ graph TD
     McCall --> PT["3. Product Transition (Adapting to new environments)"]
 ```
 
-#### 1. Product Operation Factors (5 Factors)
+#### ✨ 1. Product Operation Factors (5 Factors)
 
 Evaluates how well the software performs in daily operational use:
 
@@ -176,29 +176,29 @@ Evaluates how well the software performs in daily operational use:
 4. **Integrity:** The ability to control and prevent unauthorized access to software data (Security).
 5. **Usability:** The mental and physical effort required to learn, operate, and interpret output from the software.
 
-#### 2. Product Revision Factors (3 Factors)
+#### 📝 2. Product Revision Factors (3 Factors)
 
 Evaluates the effort required to modify, maintain, and test the software: 6. **Maintainability:** The effort required to locate and correct a bug in an operational program. 7. **Flexibility:** The effort required to modify operational software to accommodate new customer feature requests. 8. **Testability:** The effort required to test software to ensure it performs its intended functions without errors.
 
-#### 3. Product Transition Factors (3 Factors)
+#### ✨ 3. Product Transition Factors (3 Factors)
 
 Evaluates the effort required to transfer the software into new execution environments: 9. **Portability:** The effort required to migrate software from one hardware/OS platform to another. 10. **Reusability:** The extent to which components can be reused in other applications without re-engineering. 11. **Interoperability:** The effort required to couple and exchange data between this software and other external systems.
 
 ---
 
-### Q8-1: What is Component-Based Software Engineering (CBSE)? Explain its 4 framework activities. [5 Marks]
+### 🚀 Q8-1: What is Component-Based Software Engineering (CBSE)? Explain its 4 framework activities. [5 Marks]
 
 **Model Answer:**
 **Component-Based Software Engineering (CBSE)** is a software development paradigm that emphasizes assembling software applications from pre-existing, independent, loosely coupled, and reusable software components.
 
-#### Component Interface Contracts
+#### 🚀 Component Interface Contracts
 
 A component interacts with the world via two formal interfaces:
 
 - **Provides Interface (Lollipop `---O`):** Services offered by the component.
 - **Requires Interface (Socket `---(`):** Services required by the component to run.
 
-#### The 4 CBSE Framework Activities (Q-A-C-E)
+#### ✨ The 4 CBSE Framework Activities (Q-A-C-E)
 
 1. **Component Qualification:**
    - Candidate Commercial Off-The-Shelf (COTS) components are evaluated to verify whether they satisfy system functional and non-functional requirements (performance, reliability, security, licensing, documentation).

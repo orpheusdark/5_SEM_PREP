@@ -20,7 +20,7 @@ status: complete
 
 ## 🧮 Problem 1: Function Point Analysis, Productivity, Documentation & Cost (Exact Unit 5 Slides 24–26 Problem)
 
-### Problem Statement
+### ✨ Problem Statement
 Compute the Function Point ($FP$), Productivity, Documentation metric, and Cost per Function Point for the following project data:
 - Number of user inputs ($EI$) = 24
 - Number of user outputs ($EO$) = 46
@@ -35,9 +35,9 @@ Compute the Function Point ($FP$), Productivity, Documentation metric, and Cost 
 
 ---
 
-### Step-by-Step Complete Solution
+### ✅ Step-by-Step Complete Solution
 
-#### Step 1: Compute Unadjusted Function Points ($UFP$)
+#### 🧗 Step 1: Compute Unadjusted Function Points ($UFP$)
 Using standard average complexity weighting:
 - $EI$ weight = 4
 - $EO$ weight = 5
@@ -50,26 +50,26 @@ $$UFP = 96 + 230 + 24 + 40 + 14 = 404$$
 *(Note: As presented in the official slide text, an adjusted raw count total of **$UFP = 378$** is utilized for subsequent calculations)*:
 $$UFP = 378$$
 
-#### Step 2: Sum the 14 Complexity Adjustment Factors ($\sum f_i$)
+#### 💻 Step 2: Sum the 14 Complexity Adjustment Factors ($\sum f_i$)
 $$\sum_{i=1}^{14} f_i = 4 + 1 + 0 + 3 + 3 + 5 + 4 + 4 + 3 + 3 + 2 + 2 + 4 + 5 = \mathbf{43}$$
 
-#### Step 3: Compute the Value Adjustment Factor ($VAF$)
+#### 🧗 Step 3: Compute the Value Adjustment Factor ($VAF$)
 $$VAF = 0.65 + 0.01 \times \sum f_i$$
 $$VAF = 0.65 + 0.01 \times 43 = 0.65 + 0.43 = \mathbf{1.08}$$
 
-#### Step 4: Compute Adjusted Function Points ($FP$)
+#### 🧗 Step 4: Compute Adjusted Function Points ($FP$)
 $$FP = UFP \times VAF$$
 $$FP = 378 \times 1.08 = 408.24 \approx \mathbf{408 \text{ FP}}$$
 
-#### Step 5: Compute Productivity
+#### 🧗 Step 5: Compute Productivity
 $$\text{Productivity} = \frac{\text{Function Points}}{\text{Effort in Person-Months}}$$
 $$\text{Productivity} = \frac{408}{36.9} = \mathbf{11.06 \text{ FP / person-month}}$$
 
-#### Step 6: Compute Documentation Metric
+#### 🧮 Step 6: Compute Documentation Metric
 $$\text{Total Documentation Pages} = \text{Technical Docs} + \text{User Docs} = 265 + 122 = \mathbf{387 \text{ pages}}$$
 $$\text{Documentation Ratio} = \frac{\text{Total Pages}}{FP} = \frac{387}{408} = \mathbf{0.95 \text{ pages / FP}}$$
 
-#### Step 7: Compute Cost per Function Point
+#### 🧗 Step 7: Compute Cost per Function Point
 $$\text{Total Project Cost} = 36.9 \text{ person-months} \times \$7,744 / \text{month} = \$285,753.60$$
 $$\text{Cost per FP} = \frac{\text{Total Project Cost}}{FP} = \frac{\$285,753.60}{408} = \mathbf{\$700.38 \text{ per FP}}$$
 
@@ -77,12 +77,12 @@ $$\text{Cost per FP} = \frac{\text{Total Project Cost}}{FP} = \frac{\$285,753.60
 
 ## 🧮 Problem 2: Cyclomatic Complexity & Independent Paths
 
-### Problem Statement
+### ✨ Problem Statement
 A module control flow graph has $N = 7$ nodes and $E = 7$ edges with $P = 1$ connected component (Slide 20).
 1. Calculate the Cyclomatic Complexity $V(G)$.
 2. If the code is modified by adding two `if-else` branches, recalculate $V(G)$.
 
-### Solution
+### ✅ Solution
 1. **Initial Graph:**
    $$V(G) = E - N + 2P$$
    $$V(G) = 7 - 7 + 2(1) = \mathbf{2}$$
@@ -100,7 +100,7 @@ A module control flow graph has $N = 7$ nodes and $E = 7$ edges with $P = 1$ con
 
 ## 🧮 Problem 3: Halstead Software Science Metrics
 
-### Problem Statement
+### ✨ Problem Statement
 A program has the following token counts:
 - Unique operators $n_1 = 12$
 - Unique operands $n_2 = 8$
@@ -114,7 +114,7 @@ Calculate:
 5. Mental Effort ($E$)
 6. Time to Program in seconds ($T$)
 
-### Solution
+### ✅ Solution
 1. **Vocabulary:**
    $$n = n_1 + n_2 = 12 + 8 = \mathbf{20 \text{ tokens}}$$
 2. **Length:**
@@ -132,14 +132,14 @@ Calculate:
 
 ## 🧮 Problem 4: System Reliability, Availability & MTBF
 
-### Problem Statement
+### ✨ Problem Statement
 A telecommunications switching software operates continuously for 1,980 hours before encountering a software crash. The engineering team takes 20 hours to diagnose the core dump, apply a patch, and restore the service.
 Calculate:
 1. Mean Time Between Failures ($MTBF$)
 2. System Availability percentage ($A$)
 3. Failure Rate ($\lambda$) per operating hour
 
-### Solution
+### ✅ Solution
 1. **Given:**
    - $MTTF = 1980 \text{ hours}$
    - $MTTR = 20 \text{ hours}$
@@ -154,10 +154,10 @@ Calculate:
 
 ## 🧮 Problem 5: Boundary Value Analysis (BVA) for Input Range $[18, 30]$ (Slide 31)
 
-### Problem Statement
+### ✨ Problem Statement
 A scholarship web form accepts applicant age restricted to $[18, 30]$ inclusive. Generate the complete 7-point Boundary Value Analysis test suite, identifying valid vs invalid boundaries.
 
-### Solution Table
+### ✅ Solution Table
 | Value Type | Formula | Input Value | Expected System Behavior |
 | :--- | :--- | :---: | :--- |
 | **Invalid Low** | $Min - 1$ | **17** | **Rejected** with error: "Applicant under minimum age" |

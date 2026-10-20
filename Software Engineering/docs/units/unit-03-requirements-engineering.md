@@ -20,17 +20,17 @@ status: complete
 
 ---
 
-## A. Topic Overview
+## 🗺️ A. Topic Overview
 
-### 1. What is this topic about?
+### ✨ 1. What is this topic about?
 Requirements Engineering (RE) is the disciplined process of discovering, analyzing, documenting, validating, and maintaining software requirements throughout the system lifecycle. It bridges the communication gap between non-technical business stakeholders and software engineers. This unit covers the **5-step RE process**, **Feasibility Studies (T-O-E)**, the **Software Requirements Specification (SRS) IEEE 830 standard**, **Functional vs Non-Functional Requirements**, **Use Case modeling (`<<include>>`, `<<extend>>`)**, and **Analysis Modeling (Context Diagrams, DFDs, ERDs)**.
 
-### 2. Why does it matter?
+### ✨ 2. Why does it matter?
 Industry studies (Standish Group CHAOS Report) prove that over **50% of software project failures** stem from flawed requirements: incomplete specifications, unrealistic user expectations, and uncontrolled scope creep. Fixing a requirements defect during post-release maintenance costs up to **100 times more** than fixing it during requirements analysis!
 
 ---
 
-## B. Explain Like I Am Learning It for the First Time
+## ✨ B. Explain Like I Am Learning It for the First Time
 
 Imagine hiring an architect to build your dream home:
 - If you simply say: *"Build me a modern, spacious house,"* the architect might design a minimalist glass cube with 1 bedroom and 4 living rooms.
@@ -47,9 +47,9 @@ Everything agreed upon is written into a binding contract: the **Software Requir
 
 ---
 
-## C. Detailed Exam Notes
+## 📝 C. Detailed Exam Notes
 
-### 1. The 5-Step Requirements Engineering Process (Core Exam Topic)
+### 🔄 1. The 5-Step Requirements Engineering Process (Core Exam Topic)
 
 ```mermaid
 flowchart TD
@@ -59,13 +59,13 @@ flowchart TD
     RV --> RM["5. Requirements Management<br>(Traceability Matrix, Change Control)"]
 ```
 
-#### Step 1: Feasibility Study (T-O-E Dimensions)
+#### 🧗 Step 1: Feasibility Study (T-O-E Dimensions)
 Assesses whether the project is worth initiating:
 1. **Technical Feasibility:** Do we possess the necessary hardware, software, networking technology, and developer skills?
 2. **Operational Feasibility:** Will the solution integrate smoothly into existing business workflows? Will employees resist using it?
 3. **Economic Feasibility (Cost-Benefit Analysis):** Does the projected financial return (ROI, cost savings) justify the development and maintenance expenditure?
 
-#### Step 2: Requirements Elicitation
+#### 📚 Step 2: Requirements Elicitation
 Techniques for discovering what users actually need:
 - *Interviews (Structured vs Unstructured):* Direct questioning of stakeholders.
 - *Questionnaires & Surveys:* Cost-effective for gathering input from thousands of distributed users.
@@ -73,10 +73,10 @@ Techniques for discovering what users actually need:
 - *Brainstorming Sessions:* Creative idea generation without early criticism.
 - *Prototyping:* Building tangible mockups to elicit feedback on ambiguous user interfaces.
 
-#### Step 3: Requirements Specification (The SRS Document)
+#### 📋 Step 3: Requirements Specification (The SRS Document)
 Documenting requirements formally. Conforms to the **IEEE 830 Standard**.
 
-#### Step 4: Requirements Validation & Verification
+#### 📋 Step 4: Requirements Validation & Verification
 - **Verification:** "Have we built the specification right?" (Conforms to internal standards).
 - **Validation:** "Have we specified the right system?" (Matches true customer intent).
 - *Validation Techniques:*
@@ -84,12 +84,12 @@ Documenting requirements formally. Conforms to the **IEEE 830 Standard**.
   2. *Walkthroughs:* An informal review where the author walks a small peer group through the document.
   3. *Prototyping:* Demonstrating an interactive mock-up to validate user workflows.
 
-#### Step 5: Requirements Management
+#### 📊 Step 5: Requirements Management
 Managing requirement evolution and changes using a **Requirements Traceability Matrix (RTM)** to map every requirement to its design, code, and test cases.
 
 ---
 
-### 2. Characteristics of a High-Quality SRS (IEEE 830 Standard)
+### 📚 2. Characteristics of a High-Quality SRS (IEEE 830 Standard)
 A good SRS document must possess these 7 attributes (frequently tested in 4-mark questions):
 1. **Unambiguous:** Every requirement has exactly one interpretation.
 2. **Complete:** Contains all essential requirements (functional, performance, constraints).
@@ -101,7 +101,7 @@ A good SRS document must possess these 7 attributes (frequently tested in 4-mark
 
 ---
 
-### 3. Functional vs Non-Functional Requirements
+### 📋 3. Functional vs Non-Functional Requirements
 
 ```mermaid
 graph TD
@@ -128,11 +128,11 @@ graph TD
 
 ---
 
-### 4. Use Case Modeling: Relationships & Notations
+### 🔄 4. Use Case Modeling: Relationships & Notations
 
 A **Use Case Diagram** depicts functional interaction between external **Actors** and the **System Boundary**.
 
-#### Use Case Relationships (Guaranteed Exam Question!)
+#### ❓ Use Case Relationships (Guaranteed Exam Question!)
 1. **`<<include>>` Relationship (Mandatory Sub-task):**
    - Represents compulsory common functionality extracted from multiple use cases.
    - The base use case *cannot complete* without executing the included use case.
@@ -161,9 +161,9 @@ flowchart LR
 
 ---
 
-### 5. Requirements Analysis & Modeling: DFD & ERD
+### 🔄 5. Requirements Analysis & Modeling: DFD & ERD
 
-#### Data Flow Diagrams (DFDs)
+#### ✨ Data Flow Diagrams (DFDs)
 Visualizes how data moves through operational transformations:
 - **Level 0 DFD (Context Diagram):** Entire software system is represented as a single central process bubble surrounded by external entities and input/output data flows.
 - **Level 1 DFD:** Decomposes the central bubble into major functional subsystems.
@@ -173,7 +173,7 @@ Visualizes how data moves through operational transformations:
   - *External Entity:* Rectangle (external user, sensor, bank system).
   - *Data Flow:* Directed arrow carrying labeled data packets.
 
-#### Entity-Relationship Diagram (Peter Chen, 1976)
+#### ✨ Entity-Relationship Diagram (Peter Chen, 1976)
 - **Entities:** Real-world object or concept (represented by a Rectangle).
 - **Weak Entity:** An entity that cannot be uniquely identified by its own attributes alone (represented by a Double Rectangle).
 - **Attributes:** Properties of an entity (represented by an Ellipse):
@@ -185,7 +185,7 @@ Visualizes how data moves through operational transformations:
 
 ---
 
-## D. Worked Examples: Complete Use Case Specification
+## 📋 D. Worked Examples: Complete Use Case Specification
 **Use Case:** Transfer Funds via Online Banking
 - **Primary Actor:** Bank Customer
 - **Preconditions:** Customer is authenticated; source account has sufficient funds.
@@ -202,7 +202,7 @@ Visualizes how data moves through operational transformations:
 
 ---
 
-## E. Code Implementation: Requirement Traceability Matrix (RTM) Validator
+## 📋 E. Code Implementation: Requirement Traceability Matrix (RTM) Validator
 
 ```python
 """
@@ -252,9 +252,9 @@ if __name__ == "__main__":
 
 ---
 
-## F. Memory and Understanding Techniques
+## ✨ F. Memory and Understanding Techniques
 
-### 1. Mnemonics
+### ✨ 1. Mnemonics
 - **Feasibility Dimensions:** **"T-O-E"** -> **T**echnical, **O**perational, **E**conomic.
 - **Characteristics of Good SRS:** **"C-U-C-V-T"** -> **C**omplete, **U**nambiguous, **C**onsistent, **V**erifiable, **T**raceable.
 - **Include vs Extend:**
@@ -263,7 +263,7 @@ if __name__ == "__main__":
 
 ---
 
-## G. Common Mistakes & Exam Tips
+## 📝 G. Common Mistakes & Exam Tips
 - **The Include vs Extend Arrow Direction Trap:**
   - For `<<include>>`: Arrow points **FROM Base Use Case TO Included Use Case** (`Base` $\rightarrow$ `Included`).
   - For `<<extend>>`: Arrow points **FROM Extending Use Case TO Base Use Case** (`Extension` $\rightarrow$ `Base`). *Students frequently draw this backwards!*
@@ -271,16 +271,16 @@ if __name__ == "__main__":
 
 ---
 
-## H. Quick Revision & Rapid Recall
+## 📝 H. Quick Revision & Rapid Recall
 
-### 5-Point Summary
+### 🧾 5-Point Summary
 1. The 5 steps of RE are Feasibility Study, Elicitation, Specification, Validation, and Management.
 2. Feasibility covers Technical, Operational, and Economic viability.
 3. IEEE 830 governs SRS documents: must be unambiguous, complete, consistent, verifiable, and traceable.
 4. Functional requirements specify *what* the system does; Non-functional requirements specify *how well* it does it.
 5. In UML Use Cases, `<<include>>` is mandatory shared logic, while `<<extend>>` is optional conditional logic.
 
-### Rapid-Recall Flash Questions
+### ❓ Rapid-Recall Flash Questions
 1. *Q: What IEEE standard defines the format and content of an SRS?*  
    **A:** IEEE 830 Standard.
 2. *Q: In an ER Diagram, what shape represents a Derived Attribute?*  
@@ -296,14 +296,14 @@ if __name__ == "__main__":
 
 ## 🧠 Interactive Practice Quiz
 
-### Question 1 (MCQ)
+### ❓ Question 1 (MCQ)
 Which of the following requirement statements satisfies the **Verifiability** criterion of IEEE 830?
 - A) The web application should feature an attractive and modern graphical user interface.
 - B) The database search shall return query results in less than 500 milliseconds under a concurrent load of 1000 users.
 - C) The software should be written with robust code to prevent unexpected fatal crashes.
 - D) The mobile application must have superior performance compared to competing apps.
 
-### Question 2 (Trap Question)
+### ❓ Question 2 (Trap Question)
 In a Use Case Diagram for an ATM system, what is the correct relationship between `Withdraw Cash` and `Print Receipt`?
 - A) `Withdraw Cash` $\xrightarrow{<<include>>}$ `Print Receipt`
 - B) `Print Receipt` $\xrightarrow{<<extend>>}$ `Withdraw Cash`

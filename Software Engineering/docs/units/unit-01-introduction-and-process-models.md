@@ -179,16 +179,16 @@ flowchart TD
 
 ```mermaid
 graph TD
-    subgraph quadrant1 [Quadrant 1: Planning]
+    subgraph quadrant1["Quadrant 1: Planning"]
         Q1["Determine Objectives, Constraints & Alternatives"]
     end
-    subgraph quadrant2 [Quadrant 2: Risk Analysis]
+    subgraph quadrant2["Quadrant 2: Risk Analysis"]
         Q2["Identify Risks, Resolve via Prototyping"]
     end
-    subgraph quadrant3 [Quadrant 3: Engineering]
+    subgraph quadrant3["Quadrant 3: Engineering"]
         Q3["Develop, Code & Verify Next Release"]
     end
-    subgraph quadrant4 [Quadrant 4: Evaluation]
+    subgraph quadrant4["Quadrant 4: Evaluation"]
         Q4["Customer Review, Assess Progress & Plan Next Round"]
     end
     Q1 --> Q2 --> Q3 --> Q4 --> Q1

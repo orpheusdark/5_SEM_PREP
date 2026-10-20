@@ -136,7 +136,7 @@ A formal 9-step scenario-based method developed by the Software Engineering Inst
 
 ```mermaid
 flowchart LR
-    subgraph coupling [Coupling: Strive for LOW (Left to Right)]
+    subgraph coupling["Coupling: Strive for LOW (Left to Right)"]
         C1["1. No Direct (Best)"] --> C2["2. Data"] --> C3["3. Stamp"] --> C4["4. Control"] --> C5["5. External"] --> C6["6. Common"] --> C7["7. Content (Worst)"]
     end
 ```
@@ -155,7 +155,7 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph cohesion [Cohesion: Strive for HIGH (Left to Right)]
+    subgraph cohesion["Cohesion: Strive for HIGH (Left to Right)"]
         CH1["1. Functional (Best)"] --> CH2["2. Sequential"] --> CH3["3. Communicational"] --> CH4["4. Procedural"] --> CH5["5. Temporal"] --> CH6["6. Logical"] --> CH7["7. Coincidental (Worst)"]
     end
 ```

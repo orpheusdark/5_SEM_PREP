@@ -72,16 +72,16 @@ The model is visualized as an expanding spiral traversing four quadrants:
 
 ```mermaid
 graph TD
-   subgraph quadrant1 [Quadrant 1: Planning]
+   subgraph quadrant1["Quadrant 1: Planning"]
         Q1["Determine Objectives, Constraints & Alternatives"]
     end
-   subgraph quadrant2 [Quadrant 2: Risk Analysis]
+   subgraph quadrant2["Quadrant 2: Risk Analysis"]
         Q2["Identify Technical/Managerial Risks; Mitigate via Prototyping"]
     end
-   subgraph quadrant3 [Quadrant 3: Engineering]
+   subgraph quadrant3["Quadrant 3: Engineering"]
         Q3["Develop, Code, and Verify Next Software Release"]
     end
-   subgraph quadrant4 [Quadrant 4: Evaluation]
+   subgraph quadrant4["Quadrant 4: Evaluation"]
         Q4["Customer Review, Sign-off, and Plan Next Spiral Loop"]
     end
     Q1 --> Q2 --> Q3 --> Q4 --> Q1

@@ -1,0 +1,13 @@
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and build artifacts
+*.tmp
+*.bak
+*.log
+
+# Python cache (if scripts are run)
+__pycache__/
+*.py[cod]

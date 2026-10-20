@@ -44,6 +44,7 @@ se-exam-study-guide/
 | **Short Answers (2 Marks)**    | Mandatory definitions, distinctions, and formulas        | Section A/B Q.1 Compulsory    |     [📝 Study 2-Markers](docs/practice/short-answers-2-marks.md)     |
 | **Long Answers (4 & 5 Marks)** | Analytical, comparative & architectural models           | Section A/B Q.2 & Q.3 Options | [📝 Study Long Answers](docs/practice/long-answers-4-and-5-marks.md) |
 | **Step-by-Step Numericals**    | Solved problems: FPA, Halstead, CC, Availability, BVA    | Section A/B Q.3 Numericals    |      [🧮 Solve Numericals](docs/practice/solved-numericals.md)       |
+| **Previous-Year Final Paper**  | Complete 2025 paper answers, OR choices, marks & exam tips | Full-paper revision            | [🎓 Study Paper Answers](docs/practice/previous-year-final-paper-answers.md) |
 | **Master Question Bank**       | Full unit-by-unit predicted question inventory           | Exam Blueprint    | [🏆 View Question Bank](docs/question-bank/master-question-bank.md)  |
 
 ---

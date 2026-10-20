@@ -24,9 +24,11 @@ status: complete
 ## A. Topic Overview
 
 ### 1. What is this topic about?
+
 Software Design is the engineering phase where customer requirements (from SRS) are translated into an actionable blueprint for software construction. This unit explores **Fundamental Design Concepts (Abstraction, Modularity, Information Hiding, Refactoring)**, **Architectural Styles & Patterns (Data-Centered, Pipe & Filter, Layered, Call & Return, Object-Oriented)**, the **Architecture Tradeoff Analysis Method (ATAM)**, **Peter Chen's ER Model**, **Logical vs Physical DFDs**, and the industry-critical concepts of **Coupling and Cohesion**.
 
 ### 2. Why does it matter?
+
 Design is where software quality is fostered. A poorly designed codebase degenerates into an unmaintainable "Big Ball of Mud." High coupling and low cohesion lead to fragile code where fixing a bug in one module silently breaks three unrelated features.
 
 ---
@@ -34,6 +36,7 @@ Design is where software quality is fostered. A poorly designed codebase degener
 ## B. Explain Like I Am Learning It for the First Time
 
 Think of designing a modern smartphone:
+
 - It is not built as one solid piece of melted silicon and plastic.
 - It is broken into distinct **Modules**: battery, camera module, display screen, speaker, and motherboard. That is **Modularity**.
 - When replacing a broken battery, you don't need to rewire the camera sensor. The battery connects via a standardized plug. That is **Low Coupling**.
@@ -45,11 +48,12 @@ Think of designing a modern smartphone:
 ## C. Detailed Exam Notes
 
 ### 1. Fundamental Software Design Concepts (Core Exam Checklist)
+
 1. **Abstraction (Hide Irrelevant Data):** Permitting engineers to focus on high-level problem solving without getting bogged down in low-level bit manipulation.
-   - *Procedural Abstraction:* Named sequence of instructions with a specific function (e.g., `open_door()`).
-   - *Data Abstraction:* Named collection of data describing a data object (e.g., `Door` object with attributes `height`, `locked_state`).
+   - _Procedural Abstraction:_ Named sequence of instructions with a specific function (e.g., `open_door()`).
+   - _Data Abstraction:_ Named collection of data describing a data object (e.g., `Door` object with attributes `height`, `locked_state`).
 2. **Modularity (Divide and Conquer):** Subdividing software into named, addressable components (modules) integrated to satisfy problem requirements.
-   - *Meyer's Law of Modularity:* Five criteria for modular design: Decomposability, Composability, Understandability, Continuity, and Protection.
+   - _Meyer's Law of Modularity:_ Five criteria for modular design: Decomposability, Composability, Understandability, Continuity, and Protection.
 3. **Software Architecture:** The overall structure of the software and the ways in which that structure provides conceptual integrity for a system.
 4. **Stepwise Refinement (Top-Down):** A top-down design strategy originally proposed by Niklaus Wirth. High-level abstract statements are elaborated step by step into concrete procedural logic.
 5. **Design Patterns:** A reusable, proven solution to a recurring design problem within a given context.
@@ -71,50 +75,57 @@ graph TD
 ```
 
 #### 1. Data-Centered Architecture (Repository / Blackboard)
+
 - **Concept:** A central data store (database or blackboard) sits at the core. Multiple independent client software components access and modify the data repository.
 - **Pros:** Highly scalable data sharing; independent client evolution.
 - **Cons:** Central repository is a single point of failure and performance bottleneck.
 
 #### 2. Data Flow Architecture (Pipe and Filter)
+
 - **Concept:** The system is viewed as a series of transformations on consecutive streams of input data.
 - **Components:**
-  - *Pipes:* Conduits that transport data streams from one component to another without modification.
-  - *Filters:* Independent transformation units that read incoming data streams, transform them, and emit processed output streams.
+  - _Pipes:_ Conduits that transport data streams from one component to another without modification.
+  - _Filters:_ Independent transformation units that read incoming data streams, transform them, and emit processed output streams.
 - **Examples:** UNIX shell pipelines (`cat file.txt | grep "error" | wc -l`), video rendering pipelines.
 - **Pros:** Easy to understand, reusable filters, high concurrency.
 - **Cons:** Interactive applications are difficult to model; overhead of parsing and unparsing data streams.
 
 #### 3. Call and Return Architecture
+
 - **Concept:** Traditional hierarchical program structure. Control starts at a main program and branches out into subroutines. Sub-styles include Remote Procedure Calls (RPC) in client-server systems.
 
 #### 4. Object-Oriented Architecture
+
 - **Concept:** Components encapsulate data and the operations that manipulate that data. Communication occurs through explicit message passing.
 - **Pros:** Easy to maintain and reuse; maps directly to real-world domain concepts.
 - **Cons:** Overhead of object instantiation; message passing can lead to latency.
 
 #### 5. Layered Architecture (N-Tier Architecture)
+
 - **Concept:** The system is organized hierarchically into layers. Each layer provides services to the layer immediately above it and consumes services from the layer immediately below it.
 - **Standard 3-Tier Web Hierarchy:**
-  - *Presentation Layer (UI)*
-  - *Business Logic / Application Layer*
-  - *Data Access Layer (Database)*
+  - _Presentation Layer (UI)_
+  - _Business Logic / Application Layer_
+  - _Data Access Layer (Database)_
 - **Pros:** Clear separation of concerns; changes in one layer do not ripple to distant layers.
 - **Cons:** Performance penalties due to data traversing multiple intermediary layers.
 
 ---
 
 ### 3. Architecture Tradeoff Analysis Method (ATAM)
+
 A formal 9-step scenario-based method developed by the Software Engineering Institute (SEI) to evaluate architectural decisions against quality goals (Performance, Availability, Security, Modifiability).
+
 - **Core Steps:**
-  1. *Present ATAM:* Explain the evaluation methodology to stakeholders.
-  2. *Present Business Drivers:* Review business goals and architectural drivers.
-  3. *Present Architecture:* Lead architect explains design styles and patterns.
-  4. *Identify Architectural Approaches:* Catalog patterns used.
-  5. *Generate Quality Attribute Utility Tree:* Prioritize quality attributes (e.g., Performance vs Modifiability).
-  6. *Analyze Architectural Approaches:* Probe design against utility tree scenarios.
-  7. *Brainstorm & Prioritize Scenarios:* Stakeholders create real-world stress test scenarios.
-  8. *Analyze Architectural Approaches:* Map high-priority scenarios against architecture.
-  9. *Present Results:* Deliver final evaluation report identifying **Sensitivity Points, Tradeoff Points, and Risks**.
+  1. _Present ATAM:_ Explain the evaluation methodology to stakeholders.
+  2. _Present Business Drivers:_ Review business goals and architectural drivers.
+  3. _Present Architecture:_ Lead architect explains design styles and patterns.
+  4. _Identify Architectural Approaches:_ Catalog patterns used.
+  5. _Generate Quality Attribute Utility Tree:_ Prioritize quality attributes (e.g., Performance vs Modifiability).
+  6. _Analyze Architectural Approaches:_ Probe design against utility tree scenarios.
+  7. _Brainstorm & Prioritize Scenarios:_ Stakeholders create real-world stress test scenarios.
+  8. _Analyze Architectural Approaches:_ Map high-priority scenarios against architecture.
+  9. _Present Results:_ Deliver final evaluation report identifying **Sensitivity Points, Tradeoff Points, and Risks**.
 
 ---
 
@@ -125,12 +136,13 @@ A formal 9-step scenario-based method developed by the Software Engineering Inst
 
 ```mermaid
 flowchart LR
-    subgraph Coupling: Strive for LOW (Left to Right)
+    subgraph coupling [Coupling: Strive for LOW (Left to Right)]
         C1["1. No Direct (Best)"] --> C2["2. Data"] --> C3["3. Stamp"] --> C4["4. Control"] --> C5["5. External"] --> C6["6. Common"] --> C7["7. Content (Worst)"]
     end
 ```
 
 #### Detailed Types of Coupling (From Best to Worst)
+
 1. **No Direct Coupling (Best):** Modules are completely independent; communicate neither directly nor indirectly.
 2. **Data Coupling:** Modules communicate purely by passing simple, primitive scalar parameters (e.g., `calculate_tax(float income)`).
 3. **Stamp Coupling (Data-Structure Coupling):** Modules share a composite data structure, but only need part of it (e.g., passing an entire `CustomerRecord` object when the function only needs `customer.zip_code`).
@@ -143,12 +155,13 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    subgraph Cohesion: Strive for HIGH (Left to Right)
+    subgraph cohesion [Cohesion: Strive for HIGH (Left to Right)]
         CH1["1. Functional (Best)"] --> CH2["2. Sequential"] --> CH3["3. Communicational"] --> CH4["4. Procedural"] --> CH5["5. Temporal"] --> CH6["6. Logical"] --> CH7["7. Coincidental (Worst)"]
     end
 ```
 
 #### Detailed Types of Cohesion (From Best to Worst)
+
 1. **Functional Cohesion (Best):** Every instruction inside the module performs exactly one, and only one, well-defined mathematical or logical function (e.g., `compute_square_root()`).
 2. **Sequential Cohesion:** The output of one activity serves as the direct input to the next activity inside the same module (e.g., `read_file_and_parse_json()`).
 3. **Communicational Cohesion:** All activities in the module operate on the exact same input data or produce the exact same output data (e.g., `update_and_print_customer_bill(customer_record)`).
@@ -160,6 +173,7 @@ flowchart LR
 ---
 
 ### 5. Data Flow Modeling: Logical vs Physical DFD
+
 - **Logical DFD:** Focuses strictly on business processes and data flows without reference to physical technology, hardware, or implementation details (e.g., "Verify Order", "Store Customer Data").
 - **Physical DFD:** Shows how the system is actually implemented in concrete reality (e.g., "Run Python validation script", "Write to PostgreSQL Customer Table on AWS RDS").
 
@@ -168,6 +182,7 @@ flowchart LR
 ## D. Worked Examples
 
 ### Problem: Identifying Coupling & Cohesion in Code
+
 **Analyze the following Python functions:**
 
 ```python
@@ -184,12 +199,13 @@ def compute_circle_area(radius: float) -> float:
 ```
 
 **Analysis & Solution:**
+
 1. **Snippet A:**
-   - *Cohesion:* **Communicational Cohesion** (two distinct tasks—printing to console and sending an SMTP network email—are grouped together because they share the same input data). It violates Single Responsibility Principle.
-   - *Coupling:* **Stamp Coupling** (it accepts the entire `customer` and `order` objects just to access `name`, `email`, and `total`).
+   - _Cohesion:_ **Communicational Cohesion** (two distinct tasks—printing to console and sending an SMTP network email—are grouped together because they share the same input data). It violates Single Responsibility Principle.
+   - _Coupling:_ **Stamp Coupling** (it accepts the entire `customer` and `order` objects just to access `name`, `email`, and `total`).
 2. **Snippet B:**
-   - *Cohesion:* **Functional Cohesion (Highest)**. It does one specific mathematical calculation and returns the result.
-   - *Coupling:* **Data Coupling (Lowest/Best)**. It takes a single primitive scalar `float` value and returns a `float`.
+   - _Cohesion:_ **Functional Cohesion (Highest)**. It does one specific mathematical calculation and returns the result.
+   - _Coupling:_ **Data Coupling (Lowest/Best)**. It takes a single primitive scalar `float` value and returns a `float`.
 
 ---
 
@@ -254,23 +270,26 @@ if __name__ == "__main__":
 ## F. Memory and Understanding Techniques
 
 ### 1. Mnemonics for Cohesion & Coupling
+
 - **Cohesion Levels (Best to Worst):** **"F-S-C-P-T-L-C"** -> **F**unctional, **S**equential, **C**ommunicational, **P**rocedural, **T**emporal, **L**ogical, **C**oincidental.
-  *Memory Trick:* **F**un **S**tudents **C**an **P**ass **T**he **L**ogic **C**ourse.
+  _Memory Trick:_ **F**un **S**tudents **C**an **P**ass **T**he **L**ogic **C**ourse.
 - **Coupling Levels (Best to Worst):** **"N-D-S-C-E-C-C"** -> **N**o direct, **D**ata, **S**tamp, **C**ontrol, **E**xternal, **C**ommon, **C**ontent.
-  *Memory Trick:* **N**o **D**og **S**hould **C**hase **E**very **C**at's **C**ar.
+  _Memory Trick:_ **N**o **D**og **S**hould **C**hase **E**very **C**at's **C**ar.
 
 ---
 
 ## G. Common Mistakes & Parul University Exam Tips
+
 - **The Coupling Hierarchy Error:** Students often confuse Data Coupling and Stamp Coupling.
-  *Rule:* If you pass a simple integer or string, it is **Data Coupling**. If you pass an entire object, dictionary, or struct when only a field is needed, it is **Stamp Coupling**.
-- **Cohesion Definition:** Do NOT define cohesion as "how modules communicate". That is coupling! Cohesion is the **intra-module strength** (how closely related elements are *inside* one module).
+  _Rule:_ If you pass a simple integer or string, it is **Data Coupling**. If you pass an entire object, dictionary, or struct when only a field is needed, it is **Stamp Coupling**.
+- **Cohesion Definition:** Do NOT define cohesion as "how modules communicate". That is coupling! Cohesion is the **intra-module strength** (how closely related elements are _inside_ one module).
 
 ---
 
 ## H. Quick Revision & Rapid Recall
 
 ### 5-Point Summary
+
 1. Good software design exhibits **High Cohesion and Low Coupling**.
 2. Abstraction hides internal implementation; Information Hiding limits accessibility of private data.
 3. Pipe & Filter processes streams of data; Layered architecture enforces hierarchical separation of concerns.
@@ -278,15 +297,16 @@ if __name__ == "__main__":
 5. Functional Cohesion is the best cohesion; Content Coupling is the worst coupling.
 
 ### Rapid-Recall Flash Questions
-1. *Q: What is the highest (best) form of cohesion?*  
+
+1. _Q: What is the highest (best) form of cohesion?_  
    **A:** Functional Cohesion.
-2. *Q: What is the worst (most dangerous) form of coupling?*  
+2. _Q: What is the worst (most dangerous) form of coupling?_  
    **A:** Content Coupling (pathological coupling).
-3. *Q: Passing an entire `Employee` record to a function that only calculates salary is an example of what coupling?*  
+3. _Q: Passing an entire `Employee` record to a function that only calculates salary is an example of what coupling?_  
    **A:** Stamp Coupling.
-4. *Q: What architectural style is utilized in UNIX shell pipelines?*  
+4. _Q: What architectural style is utilized in UNIX shell pipelines?_  
    **A:** Pipe and Filter architecture.
-5. *Q: What does ATAM stand for?*  
+5. _Q: What does ATAM stand for?_  
    **A:** Architecture Tradeoff Analysis Method.
 
 ---
@@ -294,14 +314,18 @@ if __name__ == "__main__":
 ## 🧠 Interactive Practice Quiz
 
 ### Question 1 (MCQ)
+
 Two software modules $M_1$ and $M_2$ both directly read and modify the same global configuration array stored in memory. What type of coupling exists between $M_1$ and $M_2$?
+
 - A) Data Coupling
 - B) Stamp Coupling
 - C) Common Coupling
 - D) Control Coupling
 
 ### Question 2 (Trap Question)
+
 A module named `Utilities` contains three functions: `calculate_tax()`, `render_3d_cube()`, and `send_bluetooth_packet()`. What type of cohesion does this module exhibit?
+
 - A) Logical Cohesion
 - B) Coincidental Cohesion
 - C) Procedural Cohesion
@@ -309,14 +333,14 @@ A module named `Utilities` contains three functions: `calculate_tax()`, `render_
 
 ---
 
-
 <details>
 <summary><b>💡 Click to Reveal Quiz Solutions & Trap Explanations</b></summary>
 
 ### 💡 Quiz Answers & Trap Explanations
+
 1. **Answer: C (Common Coupling)**  
-   *Explanation:* When modules share access to global variables or global memory, they are common coupled.
+   _Explanation:_ When modules share access to global variables or global memory, they are common coupled.
 2. **Answer: B (Coincidental Cohesion)**  
-   *Explanation:* The functions share no common data, no procedural sequence, and no conceptual similarity. Grouping them together is purely coincidental (the worst form of cohesion).
+   _Explanation:_ The functions share no common data, no procedural sequence, and no conceptual similarity. Grouping them together is purely coincidental (the worst form of cohesion).
 
 </details>
